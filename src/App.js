@@ -33,7 +33,7 @@ function App() {
             rel="noopener noreferrer"
           >
             <img src={instagram} alt="instagram.com" />
-            @asianborrelclub
+            @asianborrelclub →
           </a>
           <a
             className="fb"
@@ -42,7 +42,7 @@ function App() {
             rel="noopener noreferrer"
           >
             <img src={facebook} alt="facebook.com" />
-            /asianborrelclub
+            /asianborrelclub →
           </a>
         </div>
       </header>
