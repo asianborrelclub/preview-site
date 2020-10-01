@@ -49,7 +49,7 @@ body {
       height: 100vmin;
     }
   }
-  
+
   .socials {
     display: flex;
     flex-direction: column;
@@ -109,6 +109,8 @@ body {
 
 @media only screen and (min-width: 768px) {
   .header {
+    justify-content: center;
+
     .logo-horizontal {
       display: block;
       img {
@@ -121,8 +123,17 @@ body {
     .socials {
       flex-direction: row;
       align-items: center;
+      font-size: 20px;
+      margin-top: 1.5rem;
+      a {
+        margin: 0 1rem 0 1rem;
+      }
+      img {
+        height: 40px;
+      }
     }
     .soon {
+      margin-top: 0;
       margin-right: 50vw;
       font-size: 2rem;
     }
