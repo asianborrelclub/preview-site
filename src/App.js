@@ -1,13 +1,14 @@
 import React from "react";
 import instagram from "./img/instagram.svg";
 import facebook from "./img/facebook.svg";
+import logoHori from "./img/dark-h-logo-abc-full.svg";
+import logoSqua from "./img/dark-logo-abc-full.svg";
 import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+    <div className="home">
+      <header className="header">
         <div className="soon">
           <i>
             Coming soon
@@ -16,7 +17,13 @@ function App() {
             <span>.</span>
           </i>
         </div>
-        <div className="abc">Asian Borrel Club</div>
+        <div className="logo-horizontal">
+          <img src={logoHori} alt="logo" />
+        </div>
+        <div className="logo-square">
+          <img src={logoSqua} alt="logo" />
+        </div>
+
         <div className="socials">
           Follow us for updates:
           <a
