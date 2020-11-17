@@ -1,0 +1,21 @@
+@import "../colors";
+
+#contact-page {
+  background-color: $color-primary;
+  color: $color-primary-white;
+  font-size: 1.2rem;
+  flex-direction: column;
+  display: flex;
+  padding: 2.5%;
+  h1 {
+    align-self: center;
+    padding-bottom: 2.5%;
+  }
+
+  .card-teams {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

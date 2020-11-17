@@ -1,0 +1,39 @@
+@import "../colors";
+
+.card {
+  background-color: $color-primary-black;
+  width: 20rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-primary-white;
+  flex-basis: 25%;
+  .card-name {
+    margin: 1rem;
+    font-size: 1.5em;
+  }
+  a {
+    margin: 1rem;
+    color: $color-primary-white;
+  }
+}
+
+.card-image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-basis: 33%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    flex-basis: 75%;
+  }
+}
