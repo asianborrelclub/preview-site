@@ -11,16 +11,11 @@ class LandingPage extends Component {
             <div className="landing-announcement">
               <h1 className="landing-official">
                 <span role="img" aria-label="Party Face">
-                  WE ARE OFFICIAL!!&nbsp;🥳
-                </span>
-              </h1>
-              <h1 className="landing-official-mobile">
-                <span role="img" aria-label="Party Face">
-                  WE ARE OFFICIAL!! 🥳&nbsp;🥳&nbsp;🥳
+                  WE ARE OFFICIAL!!
                 </span>
               </h1>
               <h2>
-                We are delighted to announce to you the
+                We are excited to introduce you to the
                 Asian&nbsp;Borrel&nbsp;Club.
               </h2>
               <div className="landing-cta">

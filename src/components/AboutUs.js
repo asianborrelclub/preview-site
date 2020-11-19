@@ -12,36 +12,27 @@ class AboutUs extends Component {
           <div className="about-text">
             <p>
               We started as a small group of friends with the mission to meet
-              more students located in and around Amsterdam. But because there
-              is no such platform here to do so, we decided to create our own
-              platform! We proudly present to you: Asian Borrel Club. Our goal
-              is to bring local students together through asian culture and
-              media by offering a platform where you can befriend and network
-              with others!
+              more students located in and around Amsterdam, who are also
+              interested in the Asian community. Since there was no big platform
+              in Amsterdam for students like this, we created our own platform.
+              We proudly present to you the Asian Borrel Club.
             </p>
             <p>
-              Unfortunately due to COVID-19, we are unable to organize in-person
-              events. However, we will kick off ABC with some fun events that
-              you can attend online!
-              <span role="img" aria-label="laptop hacking">
-                💻👩‍💻👨‍💻
-              </span>
-              This club is mainly focused for students. However, everybody is
-              welcome to join! So if you see an event you'd like to attend,
-              don't be scared to join.
-              <span role="img" aria-label="hug">
-                🤗
-              </span>
+              Our goal is to bring people with an interest in the Asian culture
+              together by offering a platform where you can befriend and network
+              with others. This association is mainly focused on students, but
+              everybody is welcome to join. So if you see an event you would
+              like to attend you are more than welcome!
             </p>
             <p>
-              For more information, follow us on Instagram, like us on Facebook
-              and join our Discord to stay tuned for upcoming events!
+              Due to COVID-19, we are unable to organize social events in
+              person. So we will kick off with some fun events that you can
+              attend online.
             </p>
             <p>
-              Hope to see you at our next event!!
-              <span role="img" aria-label="party poppers">
-                🎊🎉
-              </span>
+              For more information: follow us on Instagram, like us on Facebook,
+              and join our Discord to stay tuned for upcoming events. We hope to
+              see you at our next event!
             </p>
           </div>
         </div>

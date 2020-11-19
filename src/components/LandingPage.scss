@@ -43,47 +43,41 @@
         text-transform: uppercase;
         font-weight: bold;
         line-height: 2.5rem;
-        &.landing-official {
-          display: block;
-        }
-        &.landing-official-mobile {
-          display: none;
-        }
-      }
-
-      .landing-cta {
-        padding-top: 1rem;
-        a {
-          text-decoration: none;
-        }
-        .cta {
-          position: relative;
-          color: #fff;
-          background: $color-primary-black;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-weight: bold;
-          letter-spacing: 0.9px;
-          padding: 0.5em 2em;
-          margin-right: 1rem;
-          margin-top: 1em;
-          text-align: center;
-          cursor: pointer;
-          transition: background-color 0.4s ease-out, color 0.4s ease-out;
-          &:hover {
-            background-color: #fff;
-            color: $color-primary;
-          }
-        }
       }
     }
 
-    .landing-image {
-      position: relative;
-      width: 50%;
-      margin-left: auto;
-      align-self: center;
+    .landing-cta {
+      padding-top: 1rem;
+      a {
+        text-decoration: none;
+      }
+      .cta {
+        position: relative;
+        color: #fff;
+        background: $color-primary-black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.9px;
+        padding: 0.5em 2em;
+        margin-right: 1rem;
+        margin-top: 1em;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.4s ease-out, color 0.4s ease-out;
+        &:hover {
+          background-color: #fff;
+          color: $color-primary;
+        }
+      }
     }
+  }
+
+  .landing-image {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    align-self: center;
   }
 }
 
@@ -117,12 +111,6 @@
         padding-top: 1rem;
         h1 {
           font-size: 1.75rem;
-          &.landing-official {
-            display: none;
-          }
-          &.landing-official-mobile {
-            display: block;
-          }
         }
         h2 {
           font-size: 1.5rem;
