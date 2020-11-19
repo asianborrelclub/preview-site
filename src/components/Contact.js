@@ -3,6 +3,7 @@ import TeamCard from "./TeamCard";
 import "./Contact.scss";
 import tmUnnamed from "../img/unnamed.png";
 import tmDaniel from "../img/tmdaniel.png"
+import tmSofia from "../img/tmsofia.png"
 
 class Contact extends Component {
   render() {
@@ -19,10 +20,10 @@ class Contact extends Component {
           />
 
           <TeamCard
-            image={tmUnnamed}
-            name="???"
+            image={tmSofia}
+            name="Sofia Chong"
             title="Vice-President"
-            instagram=""
+            instagram="https://www.instagram.com/sofiaaa.24/"
           />
 
           <TeamCard
