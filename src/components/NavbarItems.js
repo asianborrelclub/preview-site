@@ -5,7 +5,7 @@ export const NavbarItems = [
     cName: "nav-links",
   },
   {
-    title: "The Team",
+    title: "Our Team",
     url: "#contact-page",
     cName: "nav-links",
   },
