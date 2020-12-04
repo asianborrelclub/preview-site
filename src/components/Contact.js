@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import TeamCard from "./TeamCard";
 import "./Contact.scss";
 import tmUnnamed from "../img/unnamed.png";
-import tmDaniel from "../img/tmdaniel.png"
-import tmSofia from "../img/tmsofia.png"
-import tmChristine from "../img/tmchristine.png"
+import tmDaniel from "../img/tmdaniel.png";
+import tmSofia from "../img/tmsofia.png";
+import tmChristine from "../img/tmchristine.png";
 
 class Contact extends Component {
   render() {
@@ -12,7 +12,6 @@ class Contact extends Component {
       <div id="contact-page">
         <h1>Our Team</h1>
         <div className="card-teams">
-
           <TeamCard
             image={tmDaniel}
             name="Daniel Li"
@@ -44,10 +43,24 @@ class Contact extends Component {
           <TeamCard
             image={tmUnnamed}
             name="???"
-            title="Head of Merch"
+            title="Treasurer"
             instagram=""
           />
 
+          <TeamCard
+            image={tmUnnamed}
+            name="???"
+            title="Queen of Design"
+            instagram=""
+          />
+
+          <TeamCard
+            image={tmUnnamed}
+            name="???"
+            title="Head of External Affairs"
+            instagram=""
+          />
+          
           <TeamCard
             image={tmUnnamed}
             name="???"
