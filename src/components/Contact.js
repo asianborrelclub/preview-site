@@ -4,7 +4,9 @@ import "./Contact.scss";
 import tmUnnamed from "../img/unnamed.png";
 import tmDaniel from "../img/tmdaniel.png";
 import tmSofia from "../img/tmsofia.png";
+import tmKenneth from "../img/tmkenneth.png";
 import tmChristine from "../img/tmchristine.png";
+import tmLian from "../img/tmlian.png";
 
 class Contact extends Component {
   render() {
@@ -34,10 +36,17 @@ class Contact extends Component {
           />
 
           <TeamCard
-            image={tmUnnamed}
-            name="???"
+            image={tmKenneth}
+            name="Kenneth Chin"
             title="Head of Marketing"
-            instagram=""
+            instagram="https://www.instagram.com/kenny.chinny/"
+          />
+
+          <TeamCard
+            image={tmLian}
+            name="Lian Su"
+            title="Queen of Design"
+            instagram="https://www.instagram.com/l.ixn/"
           />
 
           <TeamCard
@@ -50,17 +59,10 @@ class Contact extends Component {
           <TeamCard
             image={tmUnnamed}
             name="???"
-            title="Queen of Design"
-            instagram=""
-          />
-
-          <TeamCard
-            image={tmUnnamed}
-            name="???"
             title="Head of External Affairs"
             instagram=""
           />
-          
+
           <TeamCard
             image={tmUnnamed}
             name="???"
