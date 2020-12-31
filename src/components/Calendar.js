@@ -15,6 +15,7 @@ class Calendar extends Component {
           <CalendarItem date="11-02-2021" title="Speed Dating" />
           <CalendarItem date="25-02-2021" title="Chinese NY Pubquiz" />
         </div>
+        ...and more to come!
       </div>
     );
   }
