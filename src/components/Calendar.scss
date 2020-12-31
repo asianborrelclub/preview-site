@@ -1,0 +1,40 @@
+@import "../colors";
+
+#calendar {
+  background-color: $color-primary-dark;
+  color: $color-primary-white;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5%;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    align-self: center;
+    padding: 2.5%;
+    z-index: 1;
+  }
+  .event-image {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.1;
+    width: 70%;
+    max-width: 40rem;
+  }
+  .event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2.5%;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #calendar {
+    .event-image {
+      width: 85%;
+    }
+  }
+}

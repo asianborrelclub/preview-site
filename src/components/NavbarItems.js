@@ -1,5 +1,10 @@
 export const NavbarItems = [
   {
+    title: "Calendar",
+    url: "#calendar",
+    cName: "nav-links",
+  },
+  {
     title: "About us",
     url: "#about-us",
     cName: "nav-links",
