@@ -45,7 +45,7 @@ class Contact extends Component {
           <TeamCard
             image={tmLian}
             name="Lian Su"
-            title="Queen of Design"
+            title="Head of Design"
             instagram="https://www.instagram.com/l.ixn/"
           />
 
