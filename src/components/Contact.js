@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import TeamCard from "./TeamCard";
 import "./Contact.scss";
-import tmUnnamed from "../img/unnamed.png";
 import tmDaniel from "../img/tmdaniel.png";
 import tmSofia from "../img/tmsofia.png";
 import tmKenneth from "../img/tmkenneth.png";
 import tmChristine from "../img/tmchristine.png";
 import tmLian from "../img/tmlian.png";
+import tmRyan from "../img/tmryan.jpg";
+import tmKevin from "../img/tmkevin.jpg";
+import tmJacky from "../img/tmjacky.jpg";
 
 class Contact extends Component {
   render() {
@@ -46,28 +48,28 @@ class Contact extends Component {
             image={tmLian}
             name="Lian Su"
             title="Head of Design"
-            instagram="https://www.instagram.com/l.ixn/"
+            instagram="https://www.instagram.com/lisumi/"
           />
 
           <TeamCard
-            image={tmUnnamed}
-            name="???"
+            image={tmKevin}
+            name="Kevin Liu"
             title="Treasurer"
-            instagram=""
+            instagram="https://www.instagram.com/kvnykliu/"
           />
 
           <TeamCard
-            image={tmUnnamed}
-            name="???"
+            image={tmJacky}
+            name="Jacky Cheng"
             title="Head of External Affairs"
-            instagram=""
+            instagram="https://www.instagram.com/j.cheng96/"
           />
 
           <TeamCard
-            image={tmUnnamed}
-            name="???"
+            image={tmRyan}
+            name="Ryan Zhang"
             title="Head of IT"
-            instagram=""
+            instagram="https://www.instagram.com/ryan.jrz/"
           />
         </div>
       </div>
