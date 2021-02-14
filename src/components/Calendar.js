@@ -10,10 +10,12 @@ class Calendar extends Component {
         <img src={backImg} className="event-image" alt="friends eating pizza"></img>
         <h1>Calendar</h1>
         <div className="event">
-          <CalendarItem date="15-01-2021" title="New Year's Bingo" />
-          <CalendarItem date="28-01-2021" title="Origami Night" />
-          <CalendarItem date="11-02-2021" title="Speed Dating" />
           <CalendarItem date="25-02-2021" title="Chinese NY Pubquiz" />
+          <CalendarItem date="11-03-2021" title="King of Catan" />
+          <CalendarItem date="25-03-2021" title="Casino Night Party" />
+          <CalendarItem date="08-04-2021" title="Trivia Night" />
+          <CalendarItem date="24-04-2021" title="Cocktail Party" />
+          <CalendarItem date="06-05-2021" title="Asian Board Games" />
         </div>
         ...and more to come!
       </div>
