@@ -5,12 +5,12 @@ export const NavbarItems = [
     cName: "nav-links",
   },
   {
-    title: "About us",
+    title: "About ABC",
     url: "#about-us",
     cName: "nav-links",
   },
   {
-    title: "Our Team",
+    title: "Our Board",
     url: "#contact-page",
     cName: "nav-links",
   },

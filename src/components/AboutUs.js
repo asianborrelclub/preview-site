@@ -6,7 +6,7 @@ class AboutUs extends Component {
   render() {
     return (
       <div id="about-us">
-        <h1>About us</h1>
+        <h1>About ABC</h1>
         <div className="about-content">
           <img className="about-image" src={aboutImage} alt="aboutImage" />
           <div className="about-text">
