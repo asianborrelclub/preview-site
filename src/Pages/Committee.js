@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import Footer from "../components/Footer";
-import FormContent from "../components/FormContent";
+import CommitteeContent from "../components/CommitteeContent";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 
-class Form extends Component {
+class Committee extends Component {
   render() {
     return (
       <>
         <Helmet>
-          <title>ABC - Committee Application</title>
+          <title>ABC - Committees</title>
         </Helmet>
         <Navbar />
-        <FormContent />
+        <CommitteeContent />
         <Footer />
       </>
     );
   }
 }
 
-export default Form;
+export default Committee;
