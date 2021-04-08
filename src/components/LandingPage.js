@@ -36,7 +36,7 @@ class LandingPage extends Component {
                 <iframe
                   title="abc promo video"
                   className="video"
-                  src="https://www.youtube.com/embed/AgTzzpPMi-I"
+                  src="https://www.youtube.com/embed/tdjZiohr4PM"
                   allowFullScreen
                 />
               </div>
