@@ -51,9 +51,9 @@ class FormContent extends Component {
           </p>
 
           <form
-            netlify
-            method="POST"
             name="committee-registration"
+            method="post"
+            data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
             <input
@@ -165,17 +165,17 @@ class FormContent extends Component {
             </div>
 
             <div className="file-upload">
-                <label className="custom-file-upload">
-                  <div className="file-name-cv">Upload CV*</div>
+              <label className="custom-file-upload">
+                <div className="file-name-cv">Upload CV*</div>
 
-                  <input
-                    type="file"
-                    name="cv-file"
-                    onChange={this.handleChange1}
-                    accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                  />
-                  <p className="file-name1"></p>
-                </label>
+                <input
+                  type="file"
+                  name="cv-file"
+                  onChange={this.handleChange1}
+                  accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                />
+                <p className="file-name1"></p>
+              </label>
               <label className="custom-file-upload">
                 <div className="file-name-ml">Upload Motivation Letter*</div>
 
