@@ -52,8 +52,10 @@
     }
 
     .committee-choice {
-      label {
-        margin-left: 1rem;
+      p {
+        label {
+          margin-left: 1rem;
+        }
         &:nth-child(1) {
           margin-top: 2rem;
           margin-left: 0;
