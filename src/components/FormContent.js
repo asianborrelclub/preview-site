@@ -52,13 +52,13 @@ class FormContent extends Component {
 
           <form
             name="committee-registration"
-            method="post"
+            method="POST"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            netlify-honeypot="bot-field"
           >
             <input
               type="hidden"
-              name="abc-form"
+              name="form-name"
               value="committee-registration"
             />
 
