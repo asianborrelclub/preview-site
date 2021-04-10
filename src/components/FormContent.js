@@ -50,9 +50,9 @@ class FormContent extends Component {
             </a>
           </p>
           <form
+            netlify
             name="committee registration"
             method="post"
-            data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit="submit"
           >
