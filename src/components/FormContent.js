@@ -52,9 +52,7 @@ class FormContent extends Component {
           <form
             netlify
             name="committee registration"
-            method="post"
             data-netlify-honeypot="bot-field"
-            onSubmit="submit"
           >
             <input
               type="hidden"
@@ -184,7 +182,6 @@ class FormContent extends Component {
               *must be a PDF or Word document! (.pdf, .doc/.docx)
             </div>
 
-            <div data-netlify-recaptcha="true"></div>
             <button type="submit">Submit</button>
           </form>
         </div>
