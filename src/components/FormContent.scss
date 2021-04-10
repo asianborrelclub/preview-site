@@ -1,9 +1,131 @@
-@import '../colors';
+@import "../colors";
 
 .form-page {
   background-color: $color-primary;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  color: $color-primary-white;
+
+  .form-card {
+    background-color: $color-primary-dark;
+    margin: 4%;
+    border-radius: 4px;
+
+    a:link,
+    a:visited {
+      color: $color-primary-white;
+    }
+    a:hover {
+      color: rgb(209, 255, 209);
+    }
+  }
+
+  h1 {
+    padding: 3.5% 3.5% 0 3.5%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #form-description {
+    max-width: 40rem;
+    padding: 3.5% 4% 0 4%;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3.5%;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+      width: 158px;
+      margin: 0.25rem 0;
+      display: inline-block;
+      border: none;
+      box-sizing: border-box;
+      &:focus {
+        outline: $color-primary-black solid 1px;
+      }
+    }
+
+    .committee-choice {
+      label {
+        margin-left: 1rem;
+        &:nth-child(1) {
+          margin-top: 2rem;
+          margin-left: 0;
+        }
+      }
+    }
+
+    label {
+      margin: 0.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .file-upload {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      margin: 1rem 0;
+
+      .custom-file-upload {
+        background-color: $color-primary-white;
+        color: $color-primary;
+        display: inline-block;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        min-width: 8rem;
+        height: 5rem;
+        border-radius: 4px;
+
+        input[type="file"] {
+          display: none;
+        }
+
+        .file-name1,
+        .file-name2 {
+          justify-self: flex-end;
+          align-self: center;
+          color: #35bd69;
+        }
+      }
+      label {
+        flex-direction: column;
+        display: flex;
+      }
+    }
+    button {
+      background: $color-primary-black;
+      padding: 1rem 2rem;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      border: none;
+      font-size: 18px;
+    }
+    .asterisk {
+      margin-bottom: 1rem;
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    form .file-upload {
+      justify-content: space-between;
+      flex-direction: row;
+      .custom-file-upload {
+        width: 48%;
+      }
+    }
+  }
 }

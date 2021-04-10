@@ -1,0 +1,112 @@
+@import "../colors";
+
+#committee-page {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+
+  .committee-landing {
+    height: calc(100vh - 160px);
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: $color-primary;
+    flex-direction: column;
+
+    .video-container {
+      position: relative;
+      width: 85%;
+      height: 50%;
+
+      .video {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+
+    .landing-image {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    h1 {
+      padding: 2rem 0;
+      z-index: 1;
+    }
+  }
+  .join-cta,
+  .landing-footer {
+    height: 80px;
+    background-color: $color-primary-dark;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .committee-info {
+    background-color: $color-primary-dark;
+    color: white;
+    padding: 2.5%;
+    justify-content: center;
+
+    .committee-item {
+      margin: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: row;
+      .committee-image {
+        width: 500px;
+        height: 500px;
+      }
+      .committee-context {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2rem;
+        h1 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .join-cta {
+    background-color: $color-primary;
+    height: 120px;
+    span {
+      margin: 0 1rem;
+      font-size: 20px;
+    }
+    button {
+      background: $color-primary-black;
+      padding: 1rem 2rem;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      border: none;
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    form .file-upload {
+      justify-content: space-between;
+      flex-direction: row;
+      .custom-file-upload {
+        width: 48%;
+      }
+    }
+    .committee-landing .video-container {
+      width: 50%;
+      height: 65%;
+    }
+  }
+}

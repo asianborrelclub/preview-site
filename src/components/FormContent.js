@@ -2,39 +2,192 @@ import React, { Component } from "react";
 import "./FormContent.scss";
 
 class FormContent extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleChange1 = this.handleChange1.bind(this);
+    this.handleChange2 = this.handleChange2.bind(this);
+  }
+
+  handleChange1(e) {
+    const [file] = e.target.files;
+    const { name: fileName } = file || {};
+    let fileNameAndSize = `CV:  ${fileName}`;
+    if (fileName === undefined) {
+      fileNameAndSize = `Upload CV*`;
+    }
+    document.querySelector(".file-name1").textContent = fileNameAndSize;
+
+    const a = document.querySelector(".file-name-cv");
+    a.style.display = "none";
+  }
+
+  handleChange2(e) {
+    const [file] = e.target.files;
+    const { name: fileName } = file || {};
+    let fileNameAndSize = `Motivation Letter: ${fileName}`;
+    if (fileName === undefined) {
+      fileNameAndSize = `Upload Motivation Letter*`;
+    }
+    document.querySelector(".file-name2").textContent = fileNameAndSize;
+    const a = document.querySelector(".file-name-ml");
+    a.style.display = "none";
+  }
+
   render() {
     return (
       <div className="form-page">
-        <h1>Form</h1>
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" />
-            </label>
+        <div className="form-card">
+          <h1>Committee&nbsp;Application Asian&nbsp;Borrel&nbsp;Club</h1>
+          <p id="form-description">
+            Thanks for showing interests in joining a committee of the Asian
+            Borrel Club! Here you can apply for one or two committees (put the
+            one your prefer the most as your first choice). After submitting
+            your application we will contact you as fast as possible. For more
+            information about our committees, please{" "}
+            <a href="/committees" target="_blank">
+              click here.
+            </a>
           </p>
-          <p>
+          <form
+            name="committee registration"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
+          >
+            <input
+              type="hidden"
+              name="abc form"
+              value="committee registration"
+            />
+
+            <div hidden>
+              <input name="bot-field" />
+            </div>
+
             <label>
-              Your Email: <input type="email" name="email" />
+              First name:
+              <input type="text" name="first-name" required />
             </label>
-          </p>
-          <p>
+
             <label>
-              Your Role:{" "}
-              <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
+              Last name:
+              <input type="text" name="last-name" required />
+            </label>
+
+            <label>
+              Date of birth:
+              <input type="date" name="date-of-birth" required />
+            </label>
+
+            <label>
+              E-mail:
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              Place of residence:
+              <select
+                defaultValue="Noord-Holland"
+                id="place-of-residence"
+                required
+              >
+                <option value="Noord-Holland">Noord-Holland</option>
+                <option value="Zuid-Holland">Zuid-Holland</option>
+                <option value="Utrecht">Utrecht</option>
+                <option value="Flevoland">Flevoland</option>
+                <option value="Gelderland">Gelderland</option>
+                <option value="Noord-Brabant">Noord-Brabant</option>
+                <option value="Overijssel">Overijssel</option>
+                <option value="Limburg">Limburg</option>
+                <option value="Friesland">Friesland</option>
+                <option value="Groningen">Groningen</option>
+                <option value="Drenthe">Drenthe</option>
+                <option value="Zeeland">Zeeland</option>
               </select>
             </label>
-          </p>
-          <p>
+
             <label>
-              Message: <textarea name="message"></textarea>
+              Institution:
+              <input type="text" name="institution" required />
             </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+
+            <div className="committee-choice">
+              <label>For which committee(s) would you like to apply?</label>
+
+              <label>
+                1st choice:
+                <select
+                  defaultValue="placeholder"
+                  id="committees-choice-1"
+                  required
+                >
+                  <option value="placeholder" disabled>
+                    Select committee
+                  </option>
+                  <option value="marketing">Marketing</option>
+                  <option value="it">IT</option>
+                  <option value="events">Events</option>
+                  <option value="external">External Affairs</option>
+                  <option value="introduction">Introduction</option>
+                </select>
+              </label>
+
+              <label>
+                2nd choice:
+                <select
+                  defaultValue="placeholder"
+                  id="committees-choice-2"
+                  required
+                >
+                  <option value="placeholder" disabled>
+                    Select committee
+                  </option>
+                  <option value="none">None</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="it">IT</option>
+                  <option value="events">Events</option>
+                  <option value="external">External Affairs</option>
+                  <option value="introduction">Introduction</option>
+                </select>
+              </label>
+            </div>
+
+            <div className="file-upload">
+              <label className="custom-file-upload">
+                <div className="file-name-cv">Upload CV*</div>
+
+                <input
+                  type="file"
+                  name="cv-file"
+                  onChange={this.handleChange1}
+                  accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                />
+                <p className="file-name1"></p>
+              </label>
+
+              <label className="custom-file-upload">
+                <div className="file-name-ml">Upload Motivation Letter*</div>
+
+                <input
+                  type="file"
+                  name="ml-file"
+                  onChange={this.handleChange2}
+                  accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                />
+                <p className="file-name2"></p>
+              </label>
+            </div>
+
+            <div className="asterisk">
+              *must be a PDF or Word document! (.pdf, .doc/.docx)
+            </div>
+
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     );
   }
