@@ -51,10 +51,10 @@ class FormContent extends Component {
           </p>
           <form
             name="committee registration"
-            method="POST"
+            method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true"
+            onSubmit="submit"
           >
             <input
               type="hidden"
