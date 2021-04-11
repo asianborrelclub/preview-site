@@ -2,6 +2,36 @@ import React, { Component } from "react";
 import "./CommitteeContent.scss";
 
 class CommitteeForm extends Component {
+  constructor(props) {
+    super(props);
+    this.handleChange1 = this.handleChange1.bind(this);
+    this.handleChange2 = this.handleChange2.bind(this);
+  }
+
+  handleChange1(e) {
+    const [file] = e.target.files;
+    const { name: fileName } = file || {};
+    let fileNameAndSize = `CV:  ${fileName}`;
+    if (fileName === undefined) {
+      fileNameAndSize = `Upload CV*`;
+    }
+    document.querySelector(".file-name1").textContent = fileNameAndSize;
+    const a = document.querySelector(".file-name-cv");
+    a.style.display = "none";
+  }
+
+  handleChange2(e) {
+    const [file] = e.target.files;
+    const { name: fileName } = file || {};
+    let fileNameAndSize = `Motivation Letter: ${fileName}`;
+    if (fileName === undefined) {
+      fileNameAndSize = `Upload Motivation Letter*`;
+    }
+    document.querySelector(".file-name2").textContent = fileNameAndSize;
+    const a = document.querySelector(".file-name-ml");
+    a.style.display = "none";
+  }
+
   render() {
     return (
       <div>
