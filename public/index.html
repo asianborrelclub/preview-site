@@ -11,6 +11,55 @@
     <title>Asian Borrel Club</title>
   </head>
   <body>
+    <form name="committee-form" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="first-name" />
+      <input type="text" name="last-name" />
+      <input type="date" name="date-of-birth" />
+      <input type="email" name="email" />
+      <select defaultValue="Noord-Holland" id="place-of-residence">
+        <option value="Noord-Holland">Noord-Holland</option>
+        <option value="Zuid-Holland">Zuid-Holland</option>
+        <option value="Utrecht">Utrecht</option>
+        <option value="Flevoland">Flevoland</option>
+        <option value="Gelderland">Gelderland</option>
+        <option value="Noord-Brabant">Noord-Brabant</option>
+        <option value="Overijssel">Overijssel</option>
+        <option value="Limburg">Limburg</option>
+        <option value="Friesland">Friesland</option>
+        <option value="Groningen">Groningen</option>
+        <option value="Drenthe">Drenthe</option>
+        <option value="Zeeland">Zeeland</option>
+      </select>
+      <input type="text" name="institution" required />
+      <select defaultValue="placeholder" id="committees-choice-1">
+        <option value="placeholder" disabled>Select committee</option>
+        <option value="marketing">Marketing</option>
+        <option value="it">IT</option>
+        <option value="events">Events</option>
+        <option value="external">External Affairs</option>
+        <option value="introduction">Introduction</option>
+      </select>
+      <select defaultValue="placeholder" id="committees-choice-2">
+        <option value="placeholder" disabled>Select committee</option>
+        <option value="none">None</option>
+        <option value="marketing">Marketing</option>
+        <option value="it">IT</option>
+        <option value="events">Events</option>
+        <option value="external">External Affairs</option>
+        <option value="introduction">Introduction</option></select
+      ><input
+        type="file"
+        name="cv-file"
+        onChange="{this.handleChange1}"
+        accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      />
+      <input
+        type="file"
+        name="ml-file"
+        onChange="{this.handleChange2}"
+        accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      />
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

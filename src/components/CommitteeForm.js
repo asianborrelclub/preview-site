@@ -5,8 +5,14 @@ class CommitteeForm extends Component {
   render() {
     return (
       <div>
-        <form name="committee-form" method="post" data-netlify="true">
+        <form name="committee-form" method="post">
           <input type="hidden" name="form-name" value="committee-form" />
+          <p hidden>
+            <label>
+              Don’t fill this out if you’re human: 
+              <input name="bot-field" />
+            </label>
+          </p>
           <p>
             <label>
               First name:
