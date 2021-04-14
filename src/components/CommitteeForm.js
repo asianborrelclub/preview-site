@@ -1,14 +1,23 @@
 import React, { Component } from "react";
 import "./CommitteeContent.scss";
 
+function encode(data) {
+  const formData = new FormData();
+
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key]);
+  }
+
+  return formData;
+}
+
 class CommitteeForm extends Component {
   constructor(props) {
     super(props);
-    this.handleChange1 = this.handleChange1.bind(this);
-    this.handleChange2 = this.handleChange2.bind(this);
+    this.state = {};
   }
 
-  handleChange1(e) {
+  handleChange1 = (e) => {
     const [file] = e.target.files;
     const { name: fileName } = file || {};
     let fileNameAndSize = `CV:  ${fileName}`;
@@ -18,9 +27,9 @@ class CommitteeForm extends Component {
     document.querySelector(".file-name1").textContent = fileNameAndSize;
     const a = document.querySelector(".file-name-cv");
     a.style.display = "none";
-  }
+  };
 
-  handleChange2(e) {
+  handleChange2 = (e) => {
     const [file] = e.target.files;
     const { name: fileName } = file || {};
     let fileNameAndSize = `Motivation Letter: ${fileName}`;
@@ -30,41 +39,98 @@ class CommitteeForm extends Component {
     document.querySelector(".file-name2").textContent = fileNameAndSize;
     const a = document.querySelector(".file-name-ml");
     a.style.display = "none";
-  }
+  };
+
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleAttachment = (e) => {
+    this.setState({ [e.target.name]: e.target.files[0] });
+  };
+
+  handleCV = (e) => {
+    this.handleAttachment(e);
+    this.handleChange1(e);
+  };
+
+  handleML = (e) => {
+    this.handleAttachment(e);
+    this.handleChange2(e);
+  };
+
+  handleSubmit = (e) => {
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state,
+      }),
+    })
+      .then((window.location = form.getAttribute("action")))
+      .catch((error) => console.log(error));
+    e.preventDefault();
+  };
 
   render() {
     return (
       <div>
-        <form name="committee-form" method="post">
+        <form
+          name="committee-form"
+          method="post"
+          action="/"
+          onSubmit={this.handleSubmit}
+        >
           <input type="hidden" name="form-name" value="committee-form" />
           <p hidden>
             <label>
-              Don’t fill this out if you’re human: 
-              <input name="bot-field" />
+              Don’t fill this out if you’re human:
+              <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
           <p>
             <label>
               First name:
-              <input type="text" name="first-name" required />
+              <input
+                type="text"
+                name="first-name"
+                required
+                onChange={this.handleChange}
+              />
             </label>
           </p>
           <p>
             <label>
               Last name:
-              <input type="text" name="last-name" required />
+              <input
+                type="text"
+                name="last-name"
+                required
+                onChange={this.handleChange}
+              />
             </label>
           </p>
           <p>
             <label>
               Date of birth:
-              <input type="date" name="date-of-birth" required />
+              <input
+                type="date"
+                name="date-of-birth"
+                required
+                onChange={this.handleChange}
+              />
             </label>
           </p>
           <p>
             <label>
               E-mail:
-              <input type="email" name="email" required />
+              <input
+                type="email"
+                name="email"
+                required
+                onChange={this.handleChange}
+              />
             </label>
           </p>
           <p>
@@ -74,6 +140,7 @@ class CommitteeForm extends Component {
                 defaultValue="Noord-Holland"
                 id="place-of-residence"
                 required
+                onChange={this.handleChange}
               >
                 <option value="Noord-Holland">Noord-Holland</option>
                 <option value="Zuid-Holland">Zuid-Holland</option>
@@ -93,7 +160,12 @@ class CommitteeForm extends Component {
           <p>
             <label>
               Institution:
-              <input type="text" name="institution" required />
+              <input
+                type="text"
+                name="institution"
+                required
+                onChange={this.handleChange}
+              />
             </label>
           </p>
           <div className="committee-choice">
@@ -107,6 +179,7 @@ class CommitteeForm extends Component {
                   defaultValue="placeholder"
                   id="committees-choice-1"
                   required
+                  onChange={this.handleChange}
                 >
                   <option value="placeholder" disabled>
                     Select committee
@@ -126,6 +199,7 @@ class CommitteeForm extends Component {
                   defaultValue="placeholder"
                   id="committees-choice-2"
                   required
+                  onChange={this.handleChange}
                 >
                   <option value="placeholder" disabled>
                     Select committee
@@ -148,7 +222,7 @@ class CommitteeForm extends Component {
               <input
                 type="file"
                 name="cv-file"
-                onChange={this.handleChange1}
+                onChange={this.handleCV}
                 accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
               />
               <p className="file-name1"></p>
@@ -159,7 +233,7 @@ class CommitteeForm extends Component {
               <input
                 type="file"
                 name="ml-file"
-                onChange={this.handleChange2}
+                onChange={this.handleML}
                 accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
               />
               <p className="file-name2"></p>
