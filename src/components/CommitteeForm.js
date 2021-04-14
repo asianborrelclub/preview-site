@@ -79,7 +79,7 @@ class CommitteeForm extends Component {
         <form
           name="committee-form"
           method="post"
-          action="/"
+          action="/success-page"
           onSubmit={this.handleSubmit}
         >
           <input type="hidden" name="form-name" value="committee-form" />

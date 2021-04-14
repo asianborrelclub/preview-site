@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router } from "react-router-dom";
 import Form from "./Pages/Form";
 import Home from "./Pages/Home";
 import Committee from "./Pages/Committee";
+import FormConfirmation from "./Pages/FormConfirmation";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/committee-form" exact component={Form} />
       <Route path="/committees" exact component={Committee} />
+      <Route path="/success-page" exact component={FormConfirmation} />
     </Router>
   );
 }

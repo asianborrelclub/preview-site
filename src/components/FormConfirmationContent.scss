@@ -1,0 +1,30 @@
+@import "../colors";
+
+.form-confirmation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $color-primary;
+  color: white;
+  height: calc(100vh - 80px);
+  align-items: center;
+
+  h1 {
+    margin: 1rem;
+  }
+  
+  p {
+    margin: 1rem;
+  }
+
+  button {
+      margin:1rem;
+    background: $color-primary-black;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+  }
+}
