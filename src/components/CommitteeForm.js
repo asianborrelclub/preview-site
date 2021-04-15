@@ -138,7 +138,7 @@ class CommitteeForm extends Component {
               Place of residence:
               <select
                 defaultValue="Noord-Holland"
-                id="place-of-residence"
+                name="place-of-residence"
                 required
                 onChange={this.handleChange}
               >
@@ -177,7 +177,7 @@ class CommitteeForm extends Component {
                 1st choice:
                 <select
                   defaultValue="placeholder"
-                  id="committees-choice-1"
+                  name="committees-choice-1"
                   required
                   onChange={this.handleChange}
                 >
@@ -197,7 +197,7 @@ class CommitteeForm extends Component {
                 2nd choice:
                 <select
                   defaultValue="placeholder"
-                  id="committees-choice-2"
+                  name="committees-choice-2"
                   required
                   onChange={this.handleChange}
                 >
