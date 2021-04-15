@@ -137,14 +137,11 @@ class CommitteeForm extends Component {
             <label>
               Place of residence:
               <select
-                defaultValue="placeholder"
                 name="place-of-residence"
                 required
                 onChange={this.handleChange}
               >
-                <option value="placeholder" disabled>
-                  Select province
-                </option>
+                <option value="">Select province</option>
                 <option value="Noord-Holland">Noord-Holland</option>
                 <option value="Zuid-Holland">Zuid-Holland</option>
                 <option value="Utrecht">Utrecht</option>
@@ -179,14 +176,11 @@ class CommitteeForm extends Component {
               <label>
                 1st choice:
                 <select
-                  defaultValue="placeholder"
                   name="committees-choice-1"
                   required
                   onChange={this.handleChange}
                 >
-                  <option value="placeholder" disabled>
-                    Select committee
-                  </option>
+                  <option value="">Select committee</option>
                   <option value="marketing">Marketing</option>
                   <option value="it">IT</option>
                   <option value="events">Events</option>
@@ -199,14 +193,11 @@ class CommitteeForm extends Component {
               <label>
                 2nd choice:
                 <select
-                  defaultValue="placeholder"
                   name="committees-choice-2"
                   required
                   onChange={this.handleChange}
                 >
-                  <option value="placeholder" disabled>
-                    Select committee
-                  </option>
+                  <option value="">Select committee</option>
                   <option value="none">None</option>
                   <option value="marketing">Marketing</option>
                   <option value="it">IT</option>
