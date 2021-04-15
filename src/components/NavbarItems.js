@@ -1,17 +1,17 @@
 export const NavbarItems = [
   {
     title: "Calendar",
-    url: "#calendar",
+    url: "https://www.asianborrelclub.nl/#calendar",
     cName: "nav-links",
   },
   {
     title: "About ABC",
-    url: "#about-us",
+    url: "https://www.asianborrelclub.nl/#about-us",
     cName: "nav-links",
   },
   {
     title: "Our Board",
-    url: "#contact-page",
+    url: "https://www.asianborrelclub.nl/#contact-page",
     cName: "nav-links",
   },
   {
