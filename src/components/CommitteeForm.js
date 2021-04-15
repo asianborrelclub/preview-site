@@ -137,11 +137,14 @@ class CommitteeForm extends Component {
             <label>
               Place of residence:
               <select
-                defaultValue="Noord-Holland"
+                defaultValue="placeholder"
                 name="place-of-residence"
                 required
                 onChange={this.handleChange}
               >
+                <option value="placeholder" disabled>
+                  Select province
+                </option>
                 <option value="Noord-Holland">Noord-Holland</option>
                 <option value="Zuid-Holland">Zuid-Holland</option>
                 <option value="Utrecht">Utrecht</option>
