@@ -7,9 +7,20 @@
   flex-direction: row;
   justify-content: flex-start;
   .event-date {
-    margin: 1rem 3rem 1rem 0rem;
+    margin: 1rem 1rem 1rem 0rem;
   }
   .event-title {
     margin: 1rem 0rem 1rem 0rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .event-item {
+    .event-date {
+      margin: 1rem 2rem 1rem 0rem;
+    }
+    .event-title {
+      margin: 1rem 0rem 1rem 0rem;
+    }
   }
 }
