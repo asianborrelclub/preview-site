@@ -42,7 +42,7 @@
   .join-cta,
   .landing-footer {
     height: 80px;
-    background-color: $color-primary-dark;
+    background-color: $color-primary-black;
     color: white;
     display: flex;
     justify-content: center;
@@ -57,22 +57,35 @@
     flex-direction: column;
 
     .committee-item {
-      margin: 1rem;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 3rem;
       max-width: 1000px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      .committee-image {
-        width: 15rem;
-        height: 15rem;
+
+      .video-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 66.66%;
+
+        .video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+        }
       }
+
       .committee-context {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 2rem;
+        width: 100%;
+        margin-top: 1rem;
         h1 {
           margin-bottom: 1rem;
         }
@@ -135,10 +148,19 @@
       font-size: 22px;
     }
     .committee-info .committee-item {
+      margin: 2rem;
       flex-direction: row;
-      .committee-image {
-        width: 400px;
-        height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .video-container {
+        padding-top: 33.33%;
+      }
+
+      .committee-context {
+        margin-left: 2rem;
+        align-self: flex-start;
+        margin-top: 0;
       }
     }
   }

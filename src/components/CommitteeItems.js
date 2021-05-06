@@ -4,11 +4,15 @@ class CommitteeItems extends Component {
   render() {
     return (
       <div className="committee-item">
-        <img
-          src={this.props.image}
-          alt="Committee"
-          className="committee-image"
-        />
+        <div className="video-container">
+          <iframe
+            title="abc promo video"
+            className="video"
+            src={this.props.url}
+            frameBorder="0"
+            allowFullScreen
+          />
+        </div>
         <div className="committee-context">
           <h1 className="committee-name">{this.props.name}</h1>
           <p className="committee-text">{this.props.text}</p>
