@@ -62,7 +62,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      .committee-image {
+        width: 100%;
+      }
       .video-container {
         position: relative;
         overflow: hidden;
@@ -152,6 +154,10 @@
       flex-direction: row;
       margin-left: auto;
       margin-right: auto;
+
+      .committee-image {
+        width: 48.25%;
+      }
 
       .video-container {
         padding-top: 33.33%;
