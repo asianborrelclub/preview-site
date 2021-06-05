@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon-website.png" />
-    <script src="https://kit.fontawesome.com/b758270f15.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/b758270f15.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Asian Borrel Club</title>
   </head>
   <body>
@@ -50,6 +56,28 @@
       </select>
       <input type="file" name="cv-file" />
       <input type="file" name="ml-file" />
+    </form>
+    <form name="hoodie-form" netlify netlify-honeypot="bot-field" hidden>
+      <select defaultValue="M" name="size">
+        <option value="">Select size</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+      <input type="text" name="first-name" />
+      <input type="text" name="last-name" />
+      <input type="email" name="email" />
+      <input type="text" name="company" />
+      <select defaultValue="hoodie-meetup" name="delivery-choice">
+        <option value="">Select delivery option</option>
+        <option value="home">Send to home</option>
+        <option value="hoodie-meetup">Hoodie meetup</option>
+      </select>
+      <input type="text" name="street-and-house-number" />
+      <input type="text" name="apt-suite-etc" />
+      <input type="text" name="postal-code" />
+      <input type="text" name="city" />
     </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
