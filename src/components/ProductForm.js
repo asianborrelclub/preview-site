@@ -23,6 +23,7 @@ class ProductForm extends Component {
 
   handleSubmit = (e) => {
     const form = e.target;
+
     fetch("/", {
       method: "POST",
       body: encode({
@@ -30,7 +31,15 @@ class ProductForm extends Component {
         ...this.state,
       }),
     })
-      .then((window.location = form.getAttribute("action")))
+      .then(
+        fetch(`/.netlify/functions/mollie-int`)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            window.location = data;
+          })
+      )
       .catch((error) => console.log(error));
     e.preventDefault();
   };
@@ -38,12 +47,7 @@ class ProductForm extends Component {
   render() {
     return (
       <>
-        <form
-          name="hoodie-form"
-          method="post"
-          action="/success-page"
-          onSubmit={this.handleSubmit}
-        >
+        <form name="hoodie-form" method="post" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="hoodie-form" />
           <p hidden>
             <label>
@@ -101,7 +105,11 @@ class ProductForm extends Component {
           </p>
           <h1>Shipping address</h1>
           <p>
-            <select name="delivery-choice" required onChange={this.handleChange}>
+            <select
+              name="delivery-choice"
+              required
+              onChange={this.handleChange}
+            >
               <option value="">Select delivery option</option>
               <option value="home">Send to home</option>
               <option value="hoodie-meetup">Hoodie meetup</option>
