@@ -10,7 +10,7 @@ const handler = async (event) => {
   const payment = await mollieClient.payments.create({
     amount: {
       currency: "EUR",
-      value: "39.99",
+      value: "34.99",
     },
     description: "ABC First Edition Panda Hoodie",
     redirectUrl: "https://www.asianborrelclub.nl/purchase-success",
