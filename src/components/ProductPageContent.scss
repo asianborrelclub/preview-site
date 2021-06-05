@@ -36,11 +36,16 @@
     }
     .hoodie-info {
       .title {
-        font-weight: normal;
         margin-bottom: 0.5rem;
       }
       .pricetag {
         font-size: 2em;
+        font-weight: bold;
+        &.sale {
+          text-decoration: line-through;
+          color: $color-primary-black;
+          font-size: 28px;
+        }
       }
       margin-left: 2rem;
       .undertitle {
