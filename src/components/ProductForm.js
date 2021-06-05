@@ -151,9 +151,9 @@ class ProductForm extends Component {
             />
           </p>
           <button type="submit">Pre-order now</button>
-          <p>
+          <span>
             *All sales will be allocated to future ABC activities and events
-          </p>
+          </span>
         </form>
       </>
     );
