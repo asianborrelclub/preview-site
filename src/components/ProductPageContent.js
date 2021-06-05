@@ -33,7 +33,7 @@ class ProductPageContent extends Component {
             </div>
             <div className="hoodie-info">
               <h1 className="title">ABC First Edition Panda Hoodie</h1>
-              <span className="pricetag">€39,99</span>
+              <span className="pricetag">€34,99</span>
               <br />
               <div className="undertitle">
                 <div>Hey there!</div>
