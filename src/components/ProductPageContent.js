@@ -32,20 +32,20 @@ class ProductPageContent extends Component {
               </Carousel>
             </div>
             <div className="hoodie-info">
-              <h1 className="title">ABC First Edition Panda Hoodie</h1>
+              <h1 className="title">ABC’s First Edition: Panda Hoodie</h1>
+              <span className="pricetag sale">€40,00</span>
+              <br />
               <span className="pricetag">€34,99</span>
               <br />
               <div className="undertitle">
-                <div>Hey there!</div>
                 <div>
-                  Thanks for showing interest in the Asian Borrel Club official
-                  Hoodie.
+                  To celebrate our first year, we designed the Panda hoodie.
+                  It’s made for your comfort.
                 </div>
                 <div>
-                  We made the perfect hoodie to represent the association!
+                  Because we want to thank you for your support this hoodie is
+                  now on SALE from €40,00 for only €34,99!
                 </div>
-                <div>Are u a real beauty and at the same time a bit moody?</div>
-                <div>Order our ABC First Edition Panda Hoodie!</div>
               </div>
 
               <h2>Details</h2>
@@ -55,6 +55,8 @@ class ProductPageContent extends Component {
                 <div>Model: Unisex</div>
                 <div>Fabric color: Black</div>
               </div>
+
+              <h2 className="astriks">*PRE-ORDER LASTS TILL 19th OF JUNE</h2>
               <div className="hoodie-cta">
                 <a href="#hoodie-preorder">
                   <button className="btn-preorder">Pre-order</button>
@@ -67,38 +69,31 @@ class ProductPageContent extends Component {
           </div>
           <div id="hoodie-more-info" className="hoodie-section-a">
             <div className="hoodie-section-a-text">
-              <h1>Meet our first ABC Hoodie!</h1>
-              <p>
-                Our design is a first edition version of our ABC hoodie and we
-                are going to tell you something about it. On the front of the
-                hoodie is the well-known ABC Logo. On the back we have a
-                hand-made design with inspiration of Asian culture! You see a
-                ring of connected bamboo sticks, which reflects our warm and
-                welcoming culture where everyone is being treated as friends. In
-                the middle you see a panda, representing our members, looking at
-                the countless opportunities in life in the form of a mountain.
-              </p>
-              <h1> Hoodie meetup</h1>
-              <p>
-                For the delivery of your Hoodie you can choose between 2 options
-                (check the box in the order form). Send it to your home or come
-                attend the Hoodie Meetup Event on the 10th of July! During the
-                hoodie meetup you will have the chance to meet other ABC members
-                and make new friends! We will have a drink together and maybe
-                even play some games in Amsterdam. We are excited to see you
-                there! More information about this meetup will follow.
-              </p>
               <h1>About</h1>
               <p>
-                We are Kenneth, Lian, Ryan and Tommy and we present to you the
-                ABC First Edition Panda Hoodie! We did our best to create a
-                beautiful hoodie! This is the first official merchandise of our
-                club and we hope you like the design and the representation of
-                our lovely culture. With this hoodie you can come to our
-                physical events in the future and really feel part of the
-                family. We hope you like it! For future merchandise we also
-                welcome designs of our members! If you are interested please
-                contact merchandise@asianborrelclub.nl
+                This design is the first edition of our limited Panda hoodie. On
+                the front of the hoodie is the well-known ABC Logo and on the
+                back we have a design made in-house, inspired by Asian culture.
+                The ring of connected bamboo sticks reflects ABC’s warm and
+                welcoming feeling. The panda represents the members, looking at
+                the countless opportunities in life (in the form of a mountain).
+              </p>
+              <h1> Hoodie meetup in Amsterdam</h1>
+              <p>
+                To pick up your hoodie, you can come to the Hoodie meetup event
+                on the 10th of July! During the hoodie meetup you will have the
+                chance to meet other ABC members. At this event we will have a
+                drink together and play some games. However, if you can’t attend
+                the event, you can also choose the option for delivery at home.
+              </p>{" "}
+              <h1>Process</h1>
+              <p>
+                This is a limited-edition hoodie, which means that after the
+                19th of June the First Edition Panda hoodie can’t be ordered
+                anymore. Shipping will take 10-14 business days. We will send
+                you an email when the product has been shipped. For any
+                questions about the process you can contact us through social
+                media or e-mail merchandise@asianborrelclub.nl.
               </p>
             </div>
             <img
@@ -109,16 +104,14 @@ class ProductPageContent extends Component {
           </div>
           <div className="hoodie-section-b">
             <div className="hoodie-section-b-text">
-              <h1>Process</h1>
+              <h1>Designs</h1>
               <p>
-                When you pre-order our hoodie you will need to fill in the
-                information in the form. After the pre-order time ends on the
-                19th of june we will pack and get the product ready for you. It
-                will arrive in 10 business days after the package is made ready.
-                We will send an email when the product has been shipped. For any
-                questions about the process you can contact us through our
-                discord server https://discord.gg/eB3TSVPB or e-mail us at
-                merchandise@asianborrelclub.nl.
+                This is the first official merchandise of ABC and we hope you
+                like the design and the representation of our lovely community.
+                With this hoodie you can come to our physical events and feel
+                part of the family. For future merchandise we also welcome
+                designs of our members! If you are interested please contact
+                merchandise@asianborrelclub.nl
               </p>
               <h1>Size</h1>
               <table>
@@ -157,7 +150,7 @@ class ProductPageContent extends Component {
           </div>
         </div>
         <div id="hoodie-preorder" className="hoodie-preorder">
-          <h1>Pre-order ABC First Edition Panda Hoodie</h1>
+          <h1>Pre-order ABC's First Edition Panda Hoodie</h1>
           <div className="hoodie-form">
             <div className="form-product-img">
               <Carousel

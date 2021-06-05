@@ -38,7 +38,10 @@
       outline: $color-primary-black solid 1px;
     }
   }
-
+  span {
+    margin-top:0.25rem;
+    width: 20rem;
+  }
   label {
     margin: 0.25rem 0;
     display: flex;
