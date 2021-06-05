@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import Committee from "./Pages/Committee";
 import FormConfirmation from "./Pages/FormConfirmation";
 import ProductPage from "./Pages/ProductPage";
+import PurchaseConfirmation from "./Pages/PurchaseConfirmation";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/committees" exact component={Committee} />
       <Route path="/success-page" exact component={FormConfirmation} />
       <Route path="/hoodie" exact component={ProductPage} />
+      <Route path="/purchase-success" exact component={PurchaseConfirmation} />
     </Router>
   );
 }
