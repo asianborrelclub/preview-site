@@ -1,0 +1,57 @@
+@import "../colors";
+a.banner-anchor {
+  text-decoration: none;
+  .scrolling-banner-PSA {
+    background-color: $color-primary-black;
+    color: $color-primary-white;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    div {
+      margin-right: 0.5rem;
+      text-decoration: none;
+    }
+    &.tablet {
+      display: none;
+    }
+    &.mobile {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1332px) {
+    .scrolling-banner-PSA {
+      height: 80px;
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .scrolling-banner-PSA {
+      font-size: 18px;
+      text-align: center;
+      &.dt {
+        display: none;
+      }
+      &.tablet {
+        display: flex;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .scrolling-banner-PSA {
+      font-size: 16px;
+      height: 60px;
+      &.tablet {
+        display: none;
+      }
+      &.mobile {
+        display: flex;
+      }
+    }
+  }
+}
