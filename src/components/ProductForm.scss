@@ -31,6 +31,7 @@
     display: inline-block;
     border: none;
     box-sizing: border-box;
+    -webkit-appearance: none;
     option {
       color: $color-primary-black;
     }
@@ -39,7 +40,7 @@
     }
   }
   span {
-    margin-top:0.25rem;
+    margin-top: 0.25rem;
     width: 20rem;
   }
   label {
