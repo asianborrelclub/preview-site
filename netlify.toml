@@ -5,4 +5,4 @@
   from = "/contact"
   to = "/"
   status = 301
-  force = false
+  force = true
