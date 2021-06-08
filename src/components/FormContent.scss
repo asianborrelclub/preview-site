@@ -123,9 +123,6 @@
   }
 
   @media only screen and (min-width: 768px) {
-    .form-page {
-      height: calc(100vh - 80px);
-    }
     form .file-upload {
       justify-content: space-between;
       flex-direction: row;

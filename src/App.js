@@ -8,6 +8,7 @@ import FormConfirmation from "./Pages/FormConfirmation";
 import ProductPage from "./Pages/ProductPage";
 import PurchaseConfirmation from "./Pages/PurchaseConfirmation";
 import ContactPage from "./Pages/ContactPage";
+import RefundPolicy from "./Pages/RefundPolicy";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/hoodie" exact component={ProductPage} />
       <Route path="/purchase-success" exact component={PurchaseConfirmation} />
       <Route path="/contact" exact component={ContactPage} />
+      <Route path="/refund-policy" exact component={RefundPolicy} />
     </Router>
   );
 }
