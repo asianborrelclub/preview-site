@@ -93,7 +93,11 @@ class ProductPageContent extends Component {
                 anymore. Shipping will take 10-14 business days. We will send
                 you an email when the product has been shipped. For any
                 questions about the process you can contact us through social
-                media or e-mail merchandise@asianborrelclub.nl.
+                media or e-mail{" "}
+                <a href="mailto:merchandise@asianborrelclub.nl">
+                  merchandise@asianborrelclub.nl
+                </a>
+                .
               </p>
             </div>
             <img
@@ -110,8 +114,11 @@ class ProductPageContent extends Component {
                 like the design and the representation of our lovely community.
                 With this hoodie you can come to our physical events and feel
                 part of the family. For future merchandise we also welcome
-                designs of our members! If you are interested please contact
-                merchandise@asianborrelclub.nl
+                designs of our members! If you are interested please contact{" "}
+                <a href="mailto:merchandise@asianborrelclub.nl">
+                  merchandise@asianborrelclub.nl
+                </a>
+                .
               </p>
               <h1>Size</h1>
               <table>
@@ -139,6 +146,14 @@ class ProductPageContent extends Component {
                   </tr>
                 </tbody>
               </table>
+              <h1>Refund Policy</h1>
+              <p>
+                For our refund policy, please{" "}
+                <a target="_blank" href="/refund-policy">
+                  click here
+                </a>
+                .
+              </p>
             </div>
             <div>
               <img

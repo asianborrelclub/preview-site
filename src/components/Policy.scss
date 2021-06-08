@@ -1,0 +1,40 @@
+@import "../colors";
+
+.refund-policy {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .policy-text {
+    margin: 4rem 0;
+    color: $color-primary-white;
+    max-width: 40%;
+    h1 {
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 26px;
+      margin-top: 2.5rem;
+      text-decoration: underline;
+    }
+    p {
+      line-height: 1.4;
+      margin-top: 1rem;
+      a:link {
+        text-decoration: none;
+        color: $color-primary-light;
+        font-style: italic;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .refund-policy .policy-text {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .refund-policy .policy-text {
+    margin: 3rem 0;
+  }
+}
