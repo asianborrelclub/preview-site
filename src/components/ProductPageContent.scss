@@ -7,6 +7,12 @@
   justify-content: center;
   padding: 2.5%;
   color: white;
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $color-primary-light;
+    font-style: italic;
+  }
 
   .landing-page {
     height: calc(100vh - 80px);
@@ -265,7 +271,7 @@
           button {
             width: 80vw;
           }
-          span{
+          span {
             width: 80vw;
           }
         }
