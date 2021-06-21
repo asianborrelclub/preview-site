@@ -111,8 +111,8 @@ class ProductForm extends Component {
               onChange={this.handleChange}
             >
               <option value="">Select delivery option</option>
-              <option value="home">Send to home</option>
               <option value="hoodie-meetup">Hoodie meetup</option>
+              <option value="home">Send to home</option>
             </select>
           </p>
           <p>
@@ -150,7 +150,10 @@ class ProductForm extends Component {
               placeholder="City"
             />
           </p>
-          <button type="submit">Order and pay</button>
+          <button type="submit">Pre-order now</button>
+          <span>
+            *All sales will be allocated to future ABC activities and events
+          </span>
         </form>
       </>
     );
