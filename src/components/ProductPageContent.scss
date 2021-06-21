@@ -15,7 +15,7 @@
   }
 
   .landing-page {
-    height: calc(100vh - 80px);
+    height: initial;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -41,6 +41,7 @@
       }
     }
     .hoodie-info {
+      width: 50vw;
       .title {
         margin-bottom: 0.5rem;
       }
