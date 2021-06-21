@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./ProductPageContent.scss";
-import ProductForm from "./ProductForm";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import hoodieFront from "../img/merch/hoodie_front.jpg";
@@ -56,11 +55,8 @@ class ProductPageContent extends Component {
                 <div>Fabric color: Black</div>
               </div>
 
-              <h2 className="astriks">*PRE-ORDER LASTS TILL 19th OF JUNE</h2>
+              <h2 className="astriks">*PRE-ORDER PERIOD ENDED</h2>
               <div className="hoodie-cta">
-                <a href="#hoodie-preorder">
-                  <button className="btn-preorder">Pre-order</button>
-                </a>
                 <a href="#hoodie-more-info">
                   <button className="btn-info">More info</button>
                 </a>
@@ -191,7 +187,6 @@ class ProductPageContent extends Component {
               </Carousel>
             </div>
             <div className="hoodie-form-information">
-              <ProductForm />
             </div>
           </div>
         </div>
