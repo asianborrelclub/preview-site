@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import "./LandingPage.scss";
 import SocialButton from "./SocialButton";
-import BannerPSA from "./BannerPSA";
 
 class LandingPage extends Component {
   render() {
     return (
       <>
-        <BannerPSA />
         <div className="landing-page">
           <div className="landing-content">
             <div className="landing-announcement">
