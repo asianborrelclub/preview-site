@@ -1,0 +1,39 @@
+@import "../colors";
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-primary;
+  color: white;
+  align-items: center;
+
+  h1 {
+    margin: 4rem 0;
+  }
+  .contact-info {
+    width: 45vw;
+    display: flex;
+    div {
+      width: 50%;
+      p {
+        a {
+          color: white;
+        }
+      }
+      h2 {
+        margin-top: 2rem;
+      }
+    }
+  }
+  .questions {
+    font-size: 24px;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+  .contact-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

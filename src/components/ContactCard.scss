@@ -1,0 +1,64 @@
+@import "../colors";
+
+.contact-card {
+  background-color: $color-primary-black;
+  width: 26rem;
+  display: flex;
+  flex-direction: column;
+  color: $color-primary-white;
+  margin: 1rem;
+  align-items: flex-start;
+  padding: 2rem;
+  .contact-upper {
+    display: flex;
+    flex-direction: row;
+    .contact-image {
+      height: 125px;
+      width: 125px;
+      border-radius: 50%;
+    }
+    .contact-heading {
+      margin-left: 1rem;
+      h2 {
+        margin: 0;
+      }
+      .contact-name {
+        font-size: 18px;
+        font-weight: normal;
+      }
+      .contact-description{
+        margin-top: 1rem;
+      }
+    }
+  }
+  .contact-socials {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: flex-start;
+    p {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      div {
+        width: 5.5rem;
+      }
+      a {
+        color: $color-primary-white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-basis: 33%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact {
+    flex-basis: 75%;
+  }
+}
