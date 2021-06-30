@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavbarItems } from "./NavbarItems";
+// eslint-disable-next-line
 import { Button } from "./Button";
 import "./Navbar.scss";
 import logo from "../img/h-logo-abc-full.svg";
@@ -41,13 +42,6 @@ class Navbar extends Component {
             );
           })}
         </ul>
-        <a
-          href="https://docs.google.com/forms/d/1y0BpGWZA2d8IKTOqrYGGHWD_9QzXTXVZRL3siw4v_KA/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button className="btn-register">Register</Button>
-        </a>
       </nav>
     );
   }
