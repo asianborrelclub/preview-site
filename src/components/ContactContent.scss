@@ -11,10 +11,11 @@
     margin: 4rem 0;
   }
   .contact-info {
-    width: 45vw;
+    width: 50%;
     display: flex;
     div {
-      width: 50%;
+      width: 100%;
+      padding: 0 2rem;
       p {
         a {
           color: white;
@@ -27,6 +28,7 @@
   }
   .questions {
     font-size: 24px;
+    margin: 0 4rem;
     margin-top: 6rem;
     margin-bottom: 2rem;
   }

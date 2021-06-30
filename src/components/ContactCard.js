@@ -14,8 +14,8 @@ class ContactCard extends Component {
           </div>
         </div>
         <div className="contact-socials">
-          <p>
-            <div>instagram</div>
+          <div className="social-header">
+            <div className="social-title">instagram</div>
             <a
               href={this.props.instagram_link}
               target="_blank"
@@ -23,9 +23,9 @@ class ContactCard extends Component {
             >
               {this.props.instagram}
             </a>
-          </p>
-          <p>
-            <div>linkedin</div>
+          </div>
+          <div className="social-header">
+            <div className="social-title">linkedin</div>
             <a
               href={this.props.linkedin_link}
               target="_blank"
@@ -33,9 +33,9 @@ class ContactCard extends Component {
             >
               {this.props.linkedin}
             </a>
-          </p>
-          <p>
-            <div>e-mail</div>
+          </div>
+          <div className="social-header">
+            <div className="social-title">e-mail</div>
             <a
               href={`mailto:` + this.props.email}
               target="_blank"
@@ -43,7 +43,7 @@ class ContactCard extends Component {
             >
               {this.props.email}
             </a>
-          </p>
+          </div>
         </div>
       </div>
     );

@@ -36,16 +36,17 @@
     flex-direction: column;
     margin-top: 1rem;
     align-items: flex-start;
-    p {
+    .social-header {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      div {
+      .social-title {
         width: 5.5rem;
       }
       a {
         color: $color-primary-white;
+        padding-left: 0.5rem;
       }
     }
   }
