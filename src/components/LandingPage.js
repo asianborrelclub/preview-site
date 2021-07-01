@@ -10,13 +10,10 @@ class LandingPage extends Component {
           <div className="landing-content">
             <div className="landing-announcement">
               <h1 className="landing-official">
-                <span role="img" aria-label="Party Face">
-                  WE ARE OFFICIAL!!
-                </span>
+                Welcome to the Asian Borrel Club!
               </h1>
               <h2>
-                We are excited to introduce you to the
-                Asian&nbsp;Borrel&nbsp;Club.
+                Let's borrel!
               </h2>
               <div className="landing-cta">
                 <a href="#about-us">
