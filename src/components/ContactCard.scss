@@ -1,8 +1,9 @@
 @import "../colors";
 
 .contact-card {
+  flex: 0 0 21%;
   background-color: $color-primary-black;
-  width: 26rem;
+  min-width: 26rem;
   display: flex;
   flex-direction: column;
   color: $color-primary-white;
@@ -26,7 +27,7 @@
         font-size: 18px;
         font-weight: normal;
       }
-      .contact-description{
+      .contact-description {
         margin-top: 1rem;
       }
     }
@@ -52,14 +53,25 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .contact {
-    flex-basis: 33%;
-  }
-}
-
 @media screen and (max-width: 425px) {
-  .contact {
-    flex-basis: 75%;
+  .contact-card {
+    min-width: 100vw;
+    .contact-socials {
+      .social-header {
+        font-size: 16px;
+        margin: 0.25rem 0;
+        a {
+          color: $color-primary-white;
+          padding-left: 0.25rem;
+        }
+      }
+    }
+    .contact-upper {
+      .contact-heading {
+        .contact-description {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }
