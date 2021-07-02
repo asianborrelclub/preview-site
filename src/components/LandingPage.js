@@ -10,25 +10,16 @@ class LandingPage extends Component {
           <div className="landing-content">
             <div className="landing-announcement">
               <h1 className="landing-official">
-                <span role="img" aria-label="Party Face">
-                  WE ARE OFFICIAL!!
-                </span>
+                Welcome to the Asian Borrel Club!
               </h1>
               <h2>
-                We are excited to introduce you to the
-                Asian&nbsp;Borrel&nbsp;Club.
+                Let's borrel!
               </h2>
               <div className="landing-cta">
                 <a href="#about-us">
                   <div className="cta vision-cta">About ABC</div>
                 </a>
-                <a
-                  href="https://docs.google.com/forms/d/1y0BpGWZA2d8IKTOqrYGGHWD_9QzXTXVZRL3siw4v_KA/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="cta register-cta">Join the club</div>
-                </a>
+                <div className="cta register-cta">Coming soon...</div>
               </div>
             </div>
             <div className="landing-image">
