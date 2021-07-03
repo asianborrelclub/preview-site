@@ -9,7 +9,7 @@ class MembershipPage extends Component {
     return (
       <>
         <Helmet>
-          <title>ABC - Membership</title>
+          <title>ABC - Member Registration</title>
         </Helmet>
         <Navbar />
         <MembershipContent />

@@ -40,7 +40,10 @@ class MembershipContent extends Component {
             window.location = data;
           })
       )
-      .catch((error) => console.log(error));
+      .catch(
+        (error) => console.log(error),
+        alert("something strange happend, please the site admin")
+      );
     e.preventDefault();
   };
 
@@ -200,7 +203,9 @@ class MembershipContent extends Component {
               onChange={this.handleChange}
               required
             />
-            <label htmlFor="hva">Amsterdam University of Applied Sciences</label>
+            <label htmlFor="hva">
+              Amsterdam University of Applied Sciences
+            </label>
             <p>
               <input
                 type="radio"
