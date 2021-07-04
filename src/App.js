@@ -22,7 +22,7 @@ function App() {
       <Route path="/purchase-success" exact component={PurchaseConfirmation} />
       <Route path="/contact" exact component={ContactPage} />
       <Route path="/refund-policy" exact component={RefundPolicy} />
-      <Route path="/membership231256" exact component={MembershipPage} />
+      <Route path="/membership/register" exact component={MembershipPage} />
     </Router>
   );
 }
