@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { NavbarItems } from "./NavbarItems";
-// eslint-disable-next-line
 import { Button } from "./Button";
 import "./Navbar.scss";
 import logo from "../img/h-logo-abc-full.svg";
@@ -42,6 +41,9 @@ class Navbar extends Component {
             );
           })}
         </ul>
+        <a href="/membership">
+          <Button className="btn-register">Join&nbsp;ABC</Button>
+        </a>
       </nav>
     );
   }

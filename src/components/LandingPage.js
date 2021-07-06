@@ -12,14 +12,14 @@ class LandingPage extends Component {
               <h1 className="landing-official">
                 Welcome to the Asian Borrel Club!
               </h1>
-              <h2>
-                Let's borrel!
-              </h2>
+              <h2>Let's borrel!</h2>
               <div className="landing-cta">
                 <a href="#about-us">
                   <div className="cta vision-cta">About ABC</div>
                 </a>
-                <div className="cta register-cta">Coming soon...</div>
+                <a href="/membership">
+                  <div className="cta register-cta">Join the club</div>
+                </a>
               </div>
             </div>
             <div className="landing-image">
