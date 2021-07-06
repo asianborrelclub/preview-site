@@ -24,26 +24,24 @@ class MembershipContent extends Component {
   handleSubmit = (e) => {
     const form = e.target;
 
-    fetch("/", {
-      method: "POST",
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state,
-      }),
-    })
+    fetch(`/.netlify/functions/mollie-int-membership`)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        window.location = data;
+      })
       .then(
-        fetch(`/.netlify/functions/mollie-int-membership`)
-          .then((res) => {
-            return res.json();
-          })
-          .then((data) => {
-            window.location = data;
-          })
+        fetch("/", {
+          method: "POST",
+          body: encode({
+            "form-name": form.getAttribute("name"),
+            ...this.state,
+          }),
+        }),
+        console.log("prr")
       )
-      .catch(
-        (error) => console.log(error),
-        alert("something strange happend, please the site admin")
-      );
+      .catch((error) => console.log(error));
     e.preventDefault();
   };
 

@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import Footer from "../components/Footer";
-import MembershipInfo from "../components/MembershipInfo";
+import MembershipContent from "../components/MembershipContent";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
 
-class MembershipPage extends Component {
+class MembershipRegister extends Component {
   render() {
     return (
       <>
         <Helmet>
-          <title>ABC - Membership</title>
+          <title>ABC - Member Registration</title>
         </Helmet>
         <Navbar />
-        <MembershipInfo />
+        <MembershipContent />
         <Footer />
       </>
     );
   }
 }
 
-export default MembershipPage;
+export default MembershipRegister;
