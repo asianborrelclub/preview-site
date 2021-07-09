@@ -21,7 +21,7 @@ class MembershipInfo extends Component {
             </p>
             <p>Partners will be revealed in the coming weeks. STAY TUNED! </p>
             <p>
-              To celebrate this, the membership will be offered with the special
+              To celebrate this, the one year membership will be offered with the special
               price of only €5,- one time.
             </p>
             <a className="add-button" href="/membership/register">
