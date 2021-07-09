@@ -9,6 +9,7 @@ import ProductPage from "./Pages/ProductPage";
 import PurchaseConfirmation from "./Pages/PurchaseConfirmation";
 import ContactPage from "./Pages/ContactPage";
 import RefundPolicy from "./Pages/RefundPolicy";
+import MembershipRegister from "./Pages/MembershipRegister";
 import MembershipPage from "./Pages/MembershipPage";
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       <Route path="/purchase-success" exact component={PurchaseConfirmation} />
       <Route path="/contact" exact component={ContactPage} />
       <Route path="/refund-policy" exact component={RefundPolicy} />
-      <Route path="/membership231256" exact component={MembershipPage} />
+      <Route path="/membership/register" exact component={MembershipRegister} />
+      <Route path="/membership" exact component={MembershipPage} />
     </Router>
   );
 }

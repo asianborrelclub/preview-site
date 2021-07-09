@@ -102,4 +102,11 @@
       color: $color-primary-black;
     }
   }
+  @media only screen and (max-width: 475px) {
+    .membership-info {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
 }
