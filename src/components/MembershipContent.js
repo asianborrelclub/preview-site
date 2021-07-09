@@ -14,8 +14,13 @@ function encode(data) {
 class MembershipContent extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { institution_status: "" };
   }
+
+  handleRadio = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+    this.setState({ institution_status: e.target.value });
+  };
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
@@ -46,6 +51,7 @@ class MembershipContent extends Component {
   };
 
   render() {
+    const { institution_status } = this.state;
     return (
       <div className="membership-page">
         <div className="membership-info">
@@ -162,6 +168,7 @@ class MembershipContent extends Component {
               onChange={this.handleChange}
             />
           </p>
+
           <div className="radio-institution">
             <b>
               <div>At which institution are you studying?</div>
@@ -172,7 +179,7 @@ class MembershipContent extends Component {
                 id="uva"
                 name="institution"
                 value="Universiteit van Amsterdam"
-                onChange={this.handleChange}
+                onChange={this.handleRadio}
                 required
               />
               <label htmlFor="uva">University of Amsterdam</label>
@@ -184,7 +191,7 @@ class MembershipContent extends Component {
                 id="vu"
                 name="institution"
                 value="Vrije Universiteit Amsterdam"
-                onChange={this.handleChange}
+                onChange={this.handleRadio}
                 required
               />
               <label htmlFor="vu">VU University Amsterdam</label>
@@ -194,7 +201,7 @@ class MembershipContent extends Component {
               id="hva"
               name="institution"
               value="Hogeschool van Amsterdam"
-              onChange={this.handleChange}
+              onChange={this.handleRadio}
               required
             />
             <label htmlFor="hva">
@@ -206,7 +213,7 @@ class MembershipContent extends Component {
                 id="institution_other"
                 name="institution"
                 value="INSTITUTION_OTHER_SELECTED"
-                onChange={this.handleChange}
+                onChange={this.handleRadio}
                 required
               />
               <label htmlFor="institution_other">Other</label>
@@ -334,18 +341,23 @@ class MembershipContent extends Component {
               <option value="Zuyd Hogeschool" />
             </datalist>
           </div>
-          <p>
-            <b>
-              <label htmlFor="student-number">Student number:</label>
-            </b>
-            <input
-              type="text"
-              name="student-number"
-              id="student-number"
-              required
-              onChange={this.handleChange}
-            />
-          </p>
+          {institution_status !== "" &&
+          institution_status !== "INSTITUTION_OTHER_SELECTED" ? (
+            <p>
+              <b>
+                <label htmlFor="student-number">Student number:</label>
+              </b>
+              <input
+                type="text"
+                name="student-number"
+                id="student-number"
+                required
+                onChange={this.handleChange}
+              />
+            </p>
+          ) : (
+            ""
+          )}
           <div className="radio-studyphase">
             <b>
               <div>Study phase:</div>
