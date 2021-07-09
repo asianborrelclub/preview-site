@@ -59,7 +59,6 @@ class MembershipContent extends Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
-
           <p>
             <b>
               <label htmlFor="first-name">First name:</label>
@@ -96,7 +95,6 @@ class MembershipContent extends Component {
               onChange={this.handleChange}
             />
           </p>
-
           <p>
             <b>
               <label htmlFor="dob">Date of birth:</label>
@@ -152,7 +150,6 @@ class MembershipContent extends Component {
               onChange={this.handleChange}
             />
           </div>
-
           <p>
             <b>
               <label htmlFor="tel">Phone number:</label>
@@ -165,7 +162,6 @@ class MembershipContent extends Component {
               onChange={this.handleChange}
             />
           </p>
-
           <div className="radio-institution">
             <b>
               <div>At which institution are you studying?</div>
@@ -338,7 +334,6 @@ class MembershipContent extends Component {
               <option value="Zuyd Hogeschool" />
             </datalist>
           </div>
-
           <p>
             <b>
               <label htmlFor="student-number">Student number:</label>
@@ -351,6 +346,60 @@ class MembershipContent extends Component {
               onChange={this.handleChange}
             />
           </p>
+          <div className="radio-studyphase">
+            <b>
+              <div>Study phase:</div>
+            </b>
+            <p>
+              <input
+                type="radio"
+                id="bachelor"
+                name="study-phase"
+                value="bachelor"
+                onChange={this.handleChange}
+                required
+              />
+              <label htmlFor="bachelor">Bachelor</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="premaster"
+                name="study-phase"
+                value="premaster"
+                onChange={this.handleChange}
+                required
+              />
+              <label htmlFor="premaster">Pre-master</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="master"
+                name="study-phase"
+                value="master"
+                onChange={this.handleChange}
+                required
+              />
+              <label htmlFor="master">Master</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                id="study-phase_other"
+                name="study-phase"
+                value="STUDY-PHASE_OTHER_SELECTED"
+                onChange={this.handleChange}
+                required
+              />
+              <label htmlFor="study-phase_other">Other</label>
+            </p>
+            <input
+              type="text"
+              name="study-phase_other"
+              onChange={this.handleChange}
+            />
+          </div>
           <button type="submit">Register</button>
         </form>
       </div>
