@@ -24,7 +24,8 @@
 
     > p,
     .radio-gender,
-    .radio-institution {
+    .radio-institution,
+    .radio-studyphase {
       margin-top: 1rem;
     }
 
@@ -76,7 +77,8 @@
       }
     }
     .radio-institution,
-    .radio-gender {
+    .radio-gender,
+    .radio-studyphase {
       label {
         display: initial;
         margin-left: 0.5rem;
