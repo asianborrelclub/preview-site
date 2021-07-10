@@ -411,6 +411,32 @@ class MembershipContent extends Component {
               name="study-phase_other"
               onChange={this.handleChange}
             />
+            <p className="terms-accept">
+              <input
+                type="checkbox"
+                id="terms-accept"
+                name="terms-accept"
+                required
+              />
+              <label htmlFor="terms-accept">
+                I accept the{" "}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/terms-and-conditions"
+                >
+                  Terms and Conditions
+                </a>{" "}
+                and the{" "}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/privacy-policy"
+                >
+                  Privacy Policy
+                </a>
+              </label>
+            </p>
           </div>
           <button type="submit">Register</button>
         </form>

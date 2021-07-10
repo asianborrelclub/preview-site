@@ -52,6 +52,18 @@
     input[type="radio"] {
       margin: 0.25rem 0;
     }
+    input[type="checkbox"] {
+      margin-top: 2rem;
+    }
+
+    .terms-accept {
+      width: 20rem;
+      a:link,
+      a:visited {
+        color: $color-primary-light;
+      }
+    }
+
     label {
       margin: 0.25rem 0;
       display: flex;
