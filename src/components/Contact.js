@@ -62,7 +62,7 @@ class Contact extends Component {
             image={tmJacky}
             name="Jacky Cheng"
             title="Head of External Affairs"
-            instagram="https://www.instagram.com/j.cheng96/"
+            instagram="https://www.instagram.com/j.hf.cheng/"
           />
 
           <TeamCard
