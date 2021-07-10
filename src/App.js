@@ -11,6 +11,7 @@ import ContactPage from "./Pages/ContactPage";
 import RefundPolicy from "./Pages/RefundPolicy";
 import MembershipRegister from "./Pages/MembershipRegister";
 import MembershipPage from "./Pages/MembershipPage";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <Route path="/refund-policy" exact component={RefundPolicy} />
       <Route path="/membership/register" exact component={MembershipRegister} />
       <Route path="/membership" exact component={MembershipPage} />
+      <Route path="/privacy-policy" exact component={PrivacyPolicy} />
+      
     </Router>
   );
 }
