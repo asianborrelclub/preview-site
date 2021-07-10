@@ -9,10 +9,37 @@ class Footer extends Component {
       <footer>
         <div className="footer">
           <img className="logo" src={logo} alt="logo" />
-          <span className="footer-text" role="img" aria-label="heart">
-            ©&nbsp;Asian&nbsp;Borrel&nbsp;Club.
-            All&nbsp;rights&nbsp;reserved.
+          <div className="resources">
+            <div className="links">
+              <div>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/privacy-policy"
+                >
+                  Privacy Policy
+                </a>
+              </div>
+              <div>
+                <a target="_blank" rel="noopener noreferrer" href="/contact">
+                  Contact
+                </a>
+              </div>
+              <div>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/terms-and-conditions"
+                >
+                  Terms and Conditions
+                </a>
+              </div>
+            </div>
+          </div>
+          <span className="footer-text">
+            ©&nbsp;Asian&nbsp;Borrel&nbsp;Club. All&nbsp;rights&nbsp;reserved.
           </span>
+
           <SocialButton />
         </div>
       </footer>
