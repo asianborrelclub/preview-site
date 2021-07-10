@@ -12,6 +12,7 @@ import RefundPolicy from "./Pages/RefundPolicy";
 import MembershipRegister from "./Pages/MembershipRegister";
 import MembershipPage from "./Pages/MembershipPage";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import ToS from "./Pages/ToS";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
       <Route path="/membership/register" exact component={MembershipRegister} />
       <Route path="/membership" exact component={MembershipPage} />
       <Route path="/privacy-policy" exact component={PrivacyPolicy} />
-      
+      <Route path="/terms-and-conditions" exact component={ToS} />
     </Router>
   );
 }
