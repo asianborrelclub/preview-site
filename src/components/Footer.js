@@ -12,6 +12,11 @@ class Footer extends Component {
           <div className="resources">
             <div className="links">
               <div>
+                <a target="_blank" rel="noopener noreferrer" href="/contact">
+                  Contact
+                </a>
+              </div>
+              <div>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -21,8 +26,21 @@ class Footer extends Component {
                 </a>
               </div>
               <div>
-                <a target="_blank" rel="noopener noreferrer" href="/contact">
-                  Contact
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/refund-policy"
+                >
+                  Refunds
+                </a>
+              </div>
+              <div>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/shipping-policy"
+                >
+                  Shipping
                 </a>
               </div>
               <div>
