@@ -13,7 +13,7 @@ class MembershipInfo extends Component {
           <p>
             ABC, which stands for Asian Borrel Club, is an Amsterdam based
             student association. "Borrel" is a Dutch term, mostly used by
-            students, for "having a drink together" together.
+            students, for "having a drink together".
           </p>
 
           <p>
@@ -46,7 +46,7 @@ class MembershipInfo extends Component {
             <p>Partners will be revealed in the coming weeks. STAY TUNED! </p>
             <p>
               To celebrate this, the one year membership will be offered with
-              the special price of only €5,- one time.
+              the special price of only €5,- (orginial price €10,-).
             </p>
             <a className="add-button" href="/membership/register">
               <button>Register here</button>
