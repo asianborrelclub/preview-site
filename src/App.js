@@ -14,6 +14,7 @@ import MembershipPage from "./Pages/MembershipPage";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import ToS from "./Pages/ToS";
 import ShippingPolicy from "./Pages/ShippingPolicy";
+import PartnerFullmoon from "./Pages/PartnerFullmoon";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Route path="/privacy-policy" exact component={PrivacyPolicy} />
       <Route path="/terms-and-conditions" exact component={ToS} />
       <Route path="/shipping-policy" exact component={ShippingPolicy} />
+      <Route path="/partners/fullmoon-garden" exact component={PartnerFullmoon} />
     </Router>
   );
 }
