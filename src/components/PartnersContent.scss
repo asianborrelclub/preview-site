@@ -1,0 +1,134 @@
+@import "../colors";
+
+body {
+  background-color: $color-primary;
+}
+.partners-template {
+  display: flex;
+  flex-direction: column;
+  color: $color-primary-white;
+  background-color: $color-primary;
+  .partners-banner {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    max-height: 25rem;
+    .partners-image {
+      display: flex;
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("../img/partners/fullmoon-garden/fmg_2.jpg");
+      background-size: 100%;
+      justify-content: center;
+      .partners-logo {
+        width: calc(80vw - 3rem);
+        padding: 1.5rem 0;
+      }
+    }
+  }
+  .partners-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    .partners-title {
+      align-self: center;
+      margin: 1rem 0;
+      h1 {
+        font-size: 38px;
+      }
+    }
+    .partners-about {
+      margin-bottom: 1rem;
+      div {
+        margin-bottom: 1rem;
+      }
+    }
+    .partners-deal {
+      background-color: $color-primary-dark;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      h2 {
+        font-weight: normal;
+      }
+    }
+
+    .partners-contact {
+      align-self: center;
+      margin-bottom: 2rem;
+      h1 {
+        text-align: center;
+        margin: 1rem 0;
+      }
+      div {
+        margin: 0.5rem 0;
+        i {
+          padding-right: 1rem;
+        }
+        a,
+        a:visited {
+          color: $color-primary-light;
+        }
+      }
+    }
+    .partners-discountpolicy {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .partners-template {
+    .partners-banner {
+      .partners-image {
+        .partners-logo {
+            width: 40vw;
+        }
+      }
+    }
+    .partners-info {
+      padding: 0 20%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .partners-template {
+    flex-direction: row;
+    height: 100vh;
+    .partners-banner {
+      width: 50%;
+      max-height: 100%;
+      .partners-image {
+        background-size: cover;
+        .partners-logo {
+          width: initial;
+          padding: 0;
+          height: 15rem;
+          max-width: 100%;
+          align-self: center;
+          padding: 0 2rem;
+        }
+      }
+    }
+    .partners-info {
+      width: 50%;
+      padding: 0 3.5%;
+      align-items: flex-start;
+      .partners-title {
+        align-self: flex-start;
+        margin: 2rem 0;
+      }
+      .partners-about {
+        margin-bottom: 2rem;
+      }
+      .partners-contact {
+        align-self: flex-start;
+        margin-top: 2rem;
+        h1 {
+          text-align: start;
+        }
+      }
+    }
+  }
+}
