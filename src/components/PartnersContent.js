@@ -2,12 +2,19 @@ import React, { Component } from "react";
 import "./PartnersContent.scss";
 
 class PartnersContent extends Component {
+  
   render() {
+    const divStyle = {
+      backgroundImage:
+        "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(" +
+        this.props.banner +
+        ")",
+    };
     return (
       <div>
         <div className="partners-template">
           <div className="partners-banner">
-            <div className="partners-image">
+            <div style={divStyle} className="partners-image">
               <img
                 src={this.props.logo}
                 alt="partner"

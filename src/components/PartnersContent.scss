@@ -16,10 +16,11 @@ body {
     .partners-image {
       display: flex;
       width: 100%;
-      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url("../img/partners/fullmoon-garden/fmg_2.jpg");
       background-size: 100%;
       justify-content: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       .partners-logo {
         width: calc(80vw - 3rem);
         padding: 1.5rem 0;
