@@ -3,8 +3,8 @@ import Footer from "../components/Footer";
 import PartnersContent from "../components/PartnersContent";
 import Navbar from "../components/Navbar";
 import { Helmet } from "react-helmet";
-import Banner from "../img/partners/fullmoon-garden/fmg_2.jpg";
-import Logo from "../img/partners/fullmoon-garden/fmg_logo.png";
+import fmgBanner from "../img/partners/fullmoon-garden/fmg_2.jpg";
+import fmgLogo from "../img/partners/fullmoon-garden/fmg_logo.png";
 
 class PartnerFullmoon extends Component {
   render() {
@@ -15,8 +15,8 @@ class PartnerFullmoon extends Component {
         </Helmet>
         <Navbar />
         <PartnersContent
-          image={Banner}
-          logo={Logo}
+          banner={fmgBanner}
+          logo={fmgLogo}
           title="Fullmoon Garden"
           about="“Yum cha” in Cantonese means to drink tea. This commonly refers to eating “dim sum” which is an integral part of Cantonese eating culture."
           about2="At Full Moon Garden, all the dim sum is made in-house and they have over 80 types of dimsum on their menu for you to choose from."
