@@ -57,7 +57,7 @@ class PartnersContent extends Component {
               </div>
               <div>
                 <i className="fas fa-phone-alt"></i>
-                <a href={"tel:" + this.props.phone2}>+31 20 2382546</a>
+                <a href={"tel:" + this.props.phone}>{"tel:" + this.props.phone2}</a>
               </div>
             </div>
 
