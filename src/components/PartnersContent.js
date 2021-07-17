@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./PartnersContent.scss";
 
 class PartnersContent extends Component {
-  
   render() {
     const divStyle = {
       backgroundImage:
@@ -38,11 +37,23 @@ class PartnersContent extends Component {
               <h1>Contact</h1>
               <div>
                 <i className="fas fa-utensils" />
-                <a target="_blank" rel="noopener noreferrer" href={this.props.website}>{this.props.website}</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={this.props.website}
+                >
+                  {this.props.website}
+                </a>
               </div>
               <div>
                 <i className="fas fa-map-marker-alt"></i>
-                <a target="_blank" rel="noopener noreferrer" href={this.props.loc_link}>{this.props.loc}</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={this.props.loc_link}
+                >
+                  {this.props.loc}
+                </a>
               </div>
               <div>
                 <i className="fas fa-phone-alt"></i>
@@ -51,7 +62,9 @@ class PartnersContent extends Component {
             </div>
 
             <div className="partners-discountpolicy">
-              Please click here to read our discount policy.
+              Not valid in combination with other active deals. Please show your
+              membership card in advance before ordering, so our partners are
+              aware of it.
             </div>
           </div>
         </div>
