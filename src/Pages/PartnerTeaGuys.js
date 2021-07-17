@@ -23,7 +23,7 @@ class PartnerTeaGuys extends Component {
           about2="Try one of their signature drinks and you will be amazed by their fresh and unique taste. There is something for everyone from the classics to cream cheese and fruity drinks."
           deal="Show your ABC Membership Card in advance and enjoy an exclusive discount of 15% on the drinks. Only valid with physical ordering."
           website="https://www.teaguys.nl/"
-          loc_link="https://g.page/tea-guys-bubbletea"
+          loc_link="https://www.google.com/maps/place/Tea+Guys/@52.3549067,4.8871741,17z/data=!3m1!4b1!4m5!3m4!1s0x47c6097aa4613069:0x1da6f7b718430ef!8m2!3d52.3548952!4d4.8893669"
           loc="Albert Cuypstraat 61-H, 1072 CM Amsterdam"
           phone="+31202332622"
           phone2="+31 20 2332622"
