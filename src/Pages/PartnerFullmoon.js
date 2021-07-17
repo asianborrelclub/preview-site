@@ -21,7 +21,7 @@ class PartnerFullmoon extends Component {
           about="“Yum cha” in Cantonese means to drink tea. This commonly refers to eating “dim sum” which is an integral part of Cantonese eating culture."
           about2="At Full Moon Garden, all the dim sum is made in-house and they have over 80 types of dimsum on their menu for you to choose from."
           deal="Show your ABC Membership Card in advance and enjoy an exclusive discount of 20% off your total restaurant bill!"
-          website="https://fullmoongarden.nl/en/menu"
+          website="https://fullmoongarden.nl/"
           loc_link="https://g.page/fullmoongardenams"
           loc="Leidsestraat 95, 1017 NZ Amsterdam"
           phone="+31202382546"
