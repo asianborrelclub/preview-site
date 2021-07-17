@@ -11,7 +11,7 @@ class PartnerFullmoon extends Component {
     return (
       <>
         <Helmet>
-          <title>ABC - Partner</title>
+          <title>ABC - Partner: Tea Guys</title>
         </Helmet>
         <Navbar />
         <PartnersContent
