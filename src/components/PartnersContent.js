@@ -38,11 +38,11 @@ class PartnersContent extends Component {
               <h1>Contact</h1>
               <div>
                 <i className="fas fa-utensils" />
-                <a href={this.props.website}>{this.props.website}</a>
+                <a target="_blank" rel="noopener noreferrer" href={this.props.website}>{this.props.website}</a>
               </div>
               <div>
                 <i className="fas fa-map-marker-alt"></i>
-                <a href={this.props.loc_link}>{this.props.loc}</a>
+                <a target="_blank" rel="noopener noreferrer" href={this.props.loc_link}>{this.props.loc}</a>
               </div>
               <div>
                 <i className="fas fa-phone-alt"></i>
