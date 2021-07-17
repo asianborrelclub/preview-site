@@ -28,12 +28,23 @@
       justify-content: center;
       align-items: center;
       img {
+        transition: transform 0.2s;
         width: 80%;
+        &:hover {
+          transform: scale(1.15);
+        }
       }
+      
     }
     .partner-card-contact {
       background-color: $color-primary-black;
       min-width: 300px;
+    }
+  }
+  .partners-contactus {
+    text-align: center;
+    a{
+      color: $color-primary-light;
     }
   }
 }

@@ -38,6 +38,7 @@ class Partners extends Component {
           />
           <div className="partner-card-contact">...and more to come!</div>
         </div>
+        <div className="partners-contactus">Interested in becoming an ABC Partner? <a href="/contact">Contact us</a>.</div>
       </div>
     );
   }
