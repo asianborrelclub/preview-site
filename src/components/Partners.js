@@ -6,7 +6,7 @@ import fmgLogo from "../img/partners/fullmoon-garden/fmg_logo.png";
 import tgBanner from "../img/partners/tea-guys/tg_1.jpeg";
 import tgLogo from "../img/partners/tea-guys/tg_logo.png";
 import wgmmBanner from "../img/partners/wagamama/wgmm_1.jpeg";
-import wgmmLogo from "../img/partners/wagamama/wgmm_logo.png";
+import wgmmLogo from "../img/partners/wagamama/wgmm_logo.svg";
 import tfmBanner from "../img/partners/the-foodmarket/tfm_1.png";
 import tfmLogo from "../img/partners/the-foodmarket/tfm_logo.svg";
 
@@ -27,12 +27,12 @@ class Partners extends Component {
             logo={tgLogo}
           />
           <PartnerCard
-            link="/partners/fullmoon-garden"
+            link="/partners/wagamama"
             banner={wgmmBanner}
             logo={wgmmLogo}
           />
           <PartnerCard
-            link="/partners/fullmoon-garden"
+            link="/partners/the-foodmarket"
             banner={tfmBanner}
             logo={tfmLogo}
           />
