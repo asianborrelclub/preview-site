@@ -22,7 +22,7 @@ class PartnerTeaGuys extends Component {
           about2="Every visit to The Foodmarket Amsterdam is unique, because every few weeks we put a different world cuisine in the spotlight."
           deal="With your ABC Membership Card you can enjoy a free cocktail/mocktail!"
           website="https://thefoodmarket.nl/"
-          loc_link="https://g.page/thefoodmarketams"
+          loc_link="https://www.google.com/maps/place/The+Foodmarket/@52.3597723,4.7830408,15z/data=!4m5!3m4!1s0x0:0x25b7522e1f06cc59!8m2!3d52.3597248!4d4.7830662"
           loc="Zuidermolenweg 36, 1069 CG Amsterdam"
           phone="+31208914588"
           phone2="+31 20 8914588"
