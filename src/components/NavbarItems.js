@@ -16,8 +16,8 @@ export const NavbarItems = [
   },
 
   {
-    title: "Hoodie",
-    url: "/hoodie",
+    title: "Partners",
+    url: "#partners",
     cName: "nav-links",
   },
 
