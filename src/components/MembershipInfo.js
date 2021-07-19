@@ -8,7 +8,31 @@ class MembershipInfo extends Component {
   render() {
     return (
       <div className="membershipinfo-page">
-        <h1>ABC Membership</h1>
+        <h1>WHO ARE WE?</h1>
+        <div className="membershipinfo-header">
+          <p>
+            ABC, which stands for Asian Borrel Club, is an Amsterdam based
+            student association. "Borrel" is a Dutch term, mostly used by
+            students, for "having a drink together".
+          </p>
+
+          <p>
+            The main goal of our association is to bring students and young
+            professionals with an interest in Asian culture together. In the
+            past year, we have been hosting numerous successful events which led
+            to a lot of new friendships. We are very grateful for the fast
+            growth in our association -- with not only students from Amsterdam
+            joining in, but also the rest of the Netherlands. We want to keep
+            this community growing, of which you can be a part of!
+          </p>
+          <p>
+            Already convinced? Join this amazing association, get your
+            membership and enjoy various benefits within ABC and at our official
+            partners through our membership card.
+          </p>
+        </div>
+
+        <h1>ABC Membership Card</h1>
         <div className="membershipinfo-upper">
           <div className="membershipinfo-upper-left">
             <p>
@@ -21,8 +45,8 @@ class MembershipInfo extends Component {
             </p>
             <p>Partners will be revealed in the coming weeks. STAY TUNED! </p>
             <p>
-              To celebrate this, the one year membership will be offered with the special
-              price of only €5,- one time.
+              To celebrate this, the one year membership will be offered with
+              the special price of only €5,- (orginial price €10,-).
             </p>
             <a className="add-button" href="/membership/register">
               <button>Register here</button>

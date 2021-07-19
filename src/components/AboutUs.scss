@@ -1,12 +1,13 @@
 @import "../colors";
 
 #about-us {
-  background-color: $color-primary;
+  background-color: $color-primary-dark;
   color: $color-primary-white;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   padding: 2.5%;
+  padding-top: 0;
   h1 {
     align-self: center;
     padding: 2.5%;
@@ -43,17 +44,23 @@
 }
 
 @media screen and (max-width: 768px) {
-  #about-us .about-content {
-    flex-direction: column;
-    .about-image {
-      width: 80%;
-      align-self: center;
-      margin-right: 0;
-      margin-left: 0;
+  #about-us {
+    h1 {
+      padding: 2rem;
     }
-    .about-text {
-      width: 100%;
-      margin: 0;
+    .about-content {
+      flex-direction: column;
+
+      .about-image {
+        width: 80%;
+        align-self: center;
+        margin-right: 0;
+        margin-left: 0;
+      }
+      .about-text {
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 @import "../colors";
 
 #contact-page {
-  background-color: $color-primary-dark;
+  background-color: $color-primary;
   color: $color-primary-white;
   font-size: 1.2rem;
   flex-direction: column;
@@ -10,11 +10,17 @@
   h1 {
     align-self: center;
     padding: 2.5%;
+    padding-top: 0;
   }
 
   .card-teams {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      padding: 2rem;
+    }
   }
 }

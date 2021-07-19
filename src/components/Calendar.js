@@ -7,7 +7,11 @@ class Calendar extends Component {
   render() {
     return (
       <div id="calendar">
-        <img src={backImg} className="event-image" alt="friends eating pizza"></img>
+        <img
+          src={backImg}
+          className="event-image"
+          alt="friends eating pizza"
+        ></img>
         <h1>Calendar</h1>
         <div className="event">
           <CalendarItem date="04-07-2021" title="Extreme Sunday 2" />
@@ -16,7 +20,7 @@ class Calendar extends Component {
           <CalendarItem date="01-08-2021" title="Extreme Sunday 3" />
           <CalendarItem date="14-08-2021" title="Speeddating" />
         </div>
-        ...and more to come. Follow our socials to get updates!
+        <div>Follow our socials to get updates!</div>
       </div>
     );
   }
