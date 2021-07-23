@@ -46,7 +46,7 @@ class MembershipInfo extends Component {
             <p>Partners will be revealed in the coming weeks. STAY TUNED! </p>
             <p>
               To celebrate this, the one year membership will be offered with
-              the special price of only €5,- (orginial price €10,-).
+              the special price of only €5,- (original price €10,-).
             </p>
             <a className="add-button" href="/membership/register">
               <button>Register here</button>
