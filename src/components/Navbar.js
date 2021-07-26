@@ -20,6 +20,9 @@ class Navbar extends Component {
             <img src={logo} alt="logo" />
           </a>
         </div>
+        <a href="/membership" className="btn-mobile-register">
+          <Button>Join&nbsp;ABC</Button>
+        </a>
         <div className="menu-icon" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
@@ -41,12 +44,8 @@ class Navbar extends Component {
             );
           })}
         </ul>
-        <a
-          href="https://docs.google.com/forms/d/1y0BpGWZA2d8IKTOqrYGGHWD_9QzXTXVZRL3siw4v_KA/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button className="btn-register">Register</Button>
+        <a href="/membership">
+          <Button className="btn-register">Join&nbsp;ABC</Button>
         </a>
       </nav>
     );

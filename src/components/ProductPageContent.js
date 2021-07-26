@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./ProductPageContent.scss";
-import ProductForm from "./ProductForm";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import hoodieFront from "../img/merch/hoodie_front.jpg";
@@ -38,14 +37,9 @@ class ProductPageContent extends Component {
               <span className="pricetag">€34,99</span>
               <br />
               <div className="undertitle">
-                <div>
-                  To celebrate our first year, we designed the Panda hoodie.
-                  It’s made for your comfort.
-                </div>
-                <div>
-                  Because we want to thank you for your support this hoodie is
-                  now on SALE from €40,00 for only €34,99!
-                </div>
+                All profits are to be allocated to future ABC events, which
+                therefore means that all profits remain in the association to
+                effectuate our vision, mission and goals.
               </div>
 
               <h2>Details</h2>
@@ -56,15 +50,7 @@ class ProductPageContent extends Component {
                 <div>Fabric color: Black</div>
               </div>
 
-              <h2 className="astriks">*PRE-ORDER LASTS TILL 19th OF JUNE</h2>
-              <div className="hoodie-cta">
-                <a href="#hoodie-preorder">
-                  <button className="btn-preorder">Pre-order</button>
-                </a>
-                <a href="#hoodie-more-info">
-                  <button className="btn-info">More info</button>
-                </a>
-              </div>
+              <h2 className="astriks">*PRE-ORDER PERIOD ENDED</h2>
             </div>
           </div>
           <div id="hoodie-more-info" className="hoodie-section-a">
@@ -190,9 +176,7 @@ class ProductPageContent extends Component {
                 </div>
               </Carousel>
             </div>
-            <div className="hoodie-form-information">
-              <ProductForm />
-            </div>
+            <div className="hoodie-form-information"></div>
           </div>
         </div>
       </>

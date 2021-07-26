@@ -1,0 +1,55 @@
+@import "../colors";
+
+.partners {
+  background-color: $color-primary;
+  color: $color-primary-white;
+  font-size: 1.2rem;
+  flex-direction: column;
+  display: flex;
+  padding: 2.5%;
+  padding-top: 0;
+  h1 {
+    align-self: center;
+    padding: 2.5%;
+  }
+  .partner-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    //Styling for ndividual cards
+    .partner-card,
+    .partner-card-contact {
+      width: 300px;
+      height: 200px;
+      margin: 0 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        transition: transform 0.2s;
+        width: 80%;
+        &:hover {
+          transform: scale(1.15);
+        }
+      }
+      
+    }
+    .partner-card-contact {
+      background-color: $color-primary-black;
+      min-width: 300px;
+    }
+  }
+  .partners-contactus {
+    text-align: center;
+    a{
+      color: $color-primary-light;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      padding: 2rem;
+    }
+  }
+}

@@ -83,6 +83,44 @@
       <input type="text" name="postal-code" />
       <input type="text" name="city" />
     </form>
+    <form name="membership-form" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="first-name" />
+      <input type="text" name="last-name" />
+      <input type="email" name="email" />
+      <input type="date" name="date-of-birth" />
+      <input type="radio" name="gender" value="male" />
+      <input type="radio" name="gender" value="female" />
+      <input type="radio" name="gender" value="GENDER_OTHER_SELECTED" />
+      <input type="text" name="gender_other" />
+      <input type="tel" name="phone-number" />
+      <input
+        type="radio"
+        name="institution"
+        value="Universiteit van Amsterdam"
+      />
+      <input
+        type="radio"
+        name="institution"
+        value="Vrije Universiteit Amsterdam"
+      />
+      <input type="radio" name="institution" value="Hogeschool van Amsterdam" />
+      <input
+        type="radio"
+        name="institution"
+        value="INSTITUTION_OTHER_SELECTED"
+      />
+      <input type="text" name="institution_other" />
+      <input type="text" name="student-number" />
+      <input type="radio" name="study-phase" value="bachelor" />
+      <input type="radio" name="study-phase" value="premaster" />
+      <input type="radio" name="study-phase" value="master" />
+      <input
+        type="radio"
+        name="study-phase"
+        value="STUDY-PHASE_OTHER_SELECTED"
+      />
+      <input type="text" name="study-phase_other" />
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

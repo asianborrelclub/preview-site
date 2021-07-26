@@ -15,7 +15,7 @@
   }
 
   .landing-page {
-    height: calc(100vh - 80px);
+    height: initial;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -41,6 +41,7 @@
       }
     }
     .hoodie-info {
+      width: 50vw;
       .title {
         margin-bottom: 0.5rem;
       }
@@ -202,7 +203,7 @@
 .hoodie-preorder {
   padding-top: 2rem;
   color: $color-primary-white;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   background-color: $color-primary-dark;

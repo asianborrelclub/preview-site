@@ -1,34 +1,23 @@
 import React, { Component } from "react";
 import "./LandingPage.scss";
 import SocialButton from "./SocialButton";
-import BannerPSA from "./BannerPSA";
 
 class LandingPage extends Component {
   render() {
     return (
       <>
-        <BannerPSA />
         <div className="landing-page">
           <div className="landing-content">
             <div className="landing-announcement">
               <h1 className="landing-official">
-                <span role="img" aria-label="Party Face">
-                  WE ARE OFFICIAL!!
-                </span>
+                Welcome to the Asian Borrel Club!
               </h1>
-              <h2>
-                We are excited to introduce you to the
-                Asian&nbsp;Borrel&nbsp;Club.
-              </h2>
+              <h2>Let's borrel!</h2>
               <div className="landing-cta">
                 <a href="#about-us">
                   <div className="cta vision-cta">About ABC</div>
                 </a>
-                <a
-                  href="https://docs.google.com/forms/d/1y0BpGWZA2d8IKTOqrYGGHWD_9QzXTXVZRL3siw4v_KA/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="/membership">
                   <div className="cta register-cta">Join the club</div>
                 </a>
               </div>
