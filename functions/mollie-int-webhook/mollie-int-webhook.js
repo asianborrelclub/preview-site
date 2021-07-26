@@ -12,7 +12,6 @@ const handler = async (event) => {
       const payment = await mollieClient.payments.get(event.body.id);
 
       console.log(event.body);
-      console.log(event.body.id);
       // Check if payment is paid
       const isPaid = payment.isPaid();
 
