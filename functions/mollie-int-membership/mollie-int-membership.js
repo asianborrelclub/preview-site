@@ -18,7 +18,10 @@ const handler = async (event) => {
 
   return {
     statusCode: 200,
-    body: JSON.stringify(payment._links.checkout.href),
+    body: JSON.stringify({
+      link: payment._links.checkout.href,
+      id: payment.id,
+    }),
   };
 };
 
