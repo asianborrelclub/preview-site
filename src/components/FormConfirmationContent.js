@@ -6,7 +6,11 @@ class FormConfirmationContent extends Component {
     return (
       <div className="form-confirmation">
         <h1>Your application has been submitted successfully!</h1>
-        <p>We will be contacting you in 2 to 3 days.</p>
+        <p>
+          If you did not receive a confirmation mail within 24 hours, please{" "}
+          <a href="/contact">contact us</a>!
+        </p>
+
         <a href="/">
           <button>Go back to homepage</button>
         </a>
