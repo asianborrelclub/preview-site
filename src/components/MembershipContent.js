@@ -35,6 +35,7 @@ class MembershipContent extends Component {
       })
       .then((data) => {
         formData.append("mollie-id", data.id);
+        window.location = data.link;
       })
       .then(
         fetch("/", {
@@ -45,9 +46,6 @@ class MembershipContent extends Component {
           }),
         })
       )
-      .then((data) => {
-        window.location = data.link;
-      })
       .catch((error) => console.log(error));
     e.preventDefault();
   };
