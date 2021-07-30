@@ -4,7 +4,7 @@ import LandingPage from "../components/LandingPage";
 import Calendar from "../components/Calendar";
 import Partners from "../components/Partners";
 import AboutUs from "../components/AboutUs";
-import Contact from "../components/Contact";
+import HomepageGallery from "../components/HomepageGallery";
 import Footer from "../components/Footer";
 
 class Home extends Component {
@@ -16,7 +16,7 @@ class Home extends Component {
         <Calendar />
         <Partners />
         <AboutUs />
-        <Contact />
+        <HomepageGallery />
         <Footer />
       </>
     );
