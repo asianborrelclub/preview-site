@@ -33,6 +33,9 @@ class MembershipContent extends Component {
       .then((res) => {
         return res.json();
       })
+      .then((data) => {
+        formData.append("mollie-id", data.id);
+      })
       .then(
         fetch("/", {
           method: "POST",
@@ -44,7 +47,6 @@ class MembershipContent extends Component {
       )
       .then((data) => {
         window.location = data.link;
-        formData.append("mollie-id", data.id);
       })
       .catch((error) => console.log(error));
     e.preventDefault();
