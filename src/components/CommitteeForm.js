@@ -2,13 +2,9 @@ import React, { Component } from "react";
 import "./CommitteeContent.scss";
 
 function encode(data) {
-  const formData = new FormData();
-
-  for (const key of Object.keys(data)) {
-    formData.append(key, data[key]);
-  }
-
-  return formData;
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
 }
 
 class CommitteeForm extends Component {
@@ -63,7 +59,7 @@ class CommitteeForm extends Component {
     const form = e.target;
     fetch("/", {
       method: "POST",
-      // headers: { "Content-Type": "multipart/form-data" },
+      headers: { "Content-Type": "multipart/form-data" },
       body: encode({
         "form-name": form.getAttribute("name"),
         ...this.state,
