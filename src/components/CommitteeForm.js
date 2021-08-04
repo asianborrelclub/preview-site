@@ -125,6 +125,18 @@ class CommitteeForm extends Component {
           </p>
           <p>
             <label>
+              Phone number:
+              <input
+                type="tel"
+                name="phone-number"
+                id="tel"
+                required
+                onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
               E-mail:
               <input
                 type="email"
@@ -238,6 +250,32 @@ class CommitteeForm extends Component {
           <div className="asterisk">
             *must be a PDF or Word document! (.pdf, .doc/.docx)
           </div>
+          <p className="terms-accept">
+            <input
+              type="checkbox"
+              id="terms-accept"
+              name="terms-accept"
+              required
+            />
+            <label htmlFor="terms-accept">
+              I accept the&nbsp;
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/terms-and-conditions"
+              >
+                Terms and Conditions
+              </a>
+              &nbsp; and the&nbsp;
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/privacy-policy"
+              >
+                Privacy Policy
+              </a>
+            </label>
+          </p>
 
           <button type="submit">Submit</button>
         </form>
