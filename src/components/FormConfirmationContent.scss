@@ -12,13 +12,13 @@
   h1 {
     margin: 1rem;
   }
-  
+
   p {
     margin: 1rem;
   }
 
   button {
-      margin:1rem;
+    margin: 1rem;
     background: $color-primary-black;
     padding: 1rem 2rem;
     text-align: center;
@@ -26,5 +26,9 @@
     color: white;
     border: none;
     font-size: 18px;
+  }
+  a,
+  a:visited {
+    color: $color-primary-light;
   }
 }

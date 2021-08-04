@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./MembershipContent.scss";
 
-function encode(data) {
-  const formData = new FormData();
+const formData = new FormData();
 
+function encode(data) {
   for (const key of Object.keys(data)) {
     formData.append(key, data[key]);
   }
@@ -34,7 +34,8 @@ class MembershipContent extends Component {
         return res.json();
       })
       .then((data) => {
-        window.location = data;
+        formData.append("mollie-id", data.id);
+        window.location = data.link;
       })
       .then(
         fetch("/", {
@@ -43,8 +44,7 @@ class MembershipContent extends Component {
             "form-name": form.getAttribute("name"),
             ...this.state,
           }),
-        }),
-        console.log("prr")
+        })
       )
       .catch((error) => console.log(error));
     e.preventDefault();
