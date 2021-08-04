@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import "./CommitteeContent.scss";
 
 function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+  const formData = new FormData();
+  Object.keys(data).forEach((k) => {
+    formData.append(k, data[k]);
+  });
+  return formData;
 }
 
 class CommitteeForm extends Component {
