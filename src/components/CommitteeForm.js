@@ -57,19 +57,22 @@ class CommitteeForm extends Component {
     this.handleChange2(e);
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     const form = e.target;
-    fetch("/", {
-      method: "POST",
-      // headers: { "Content-Type": "multipart/form-data" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state,
-      }),
-    })
-      .then((window.location = form.getAttribute("action")))
-      .catch((error) => console.log(error));
-    e.preventDefault();
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "multipart/form-data" },
+        body: encode({
+          "form-name": form.getAttribute("name"),
+          ...this.state,
+        }),
+      });
+    } catch (e) {
+      console.log(
+        "There has been a problem with your fetch operation: " + e.message
+      );
+    }
   };
 
   render() {
