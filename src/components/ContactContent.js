@@ -8,6 +8,7 @@ import tmRyan from "../img/tmryan.jpg";
 import tmKevin from "../img/tmkevin.jpg";
 import tmJacky from "../img/tmjacky.jpg";
 import tmYenly from "../img/tmyenly.png";
+import tmMatthijs from "../img/tmmatthijs.jpeg";
 
 class ContactContent extends Component {
   render() {
@@ -78,8 +79,8 @@ class ContactContent extends Component {
               <div>
                 <h2>Partnerships</h2>
                 <p>
-                  Interested in partnering up with Asian&nbsp;Borrel&nbsp;Club? Please
-                  contact us through e-mail:{" "}
+                  Interested in partnering up with Asian&nbsp;Borrel&nbsp;Club?
+                  Please contact us through e-mail:{" "}
                   <a href="mailto: external@asianborrelclub.nl">
                     <i>external@asianborrelclub.nl</i>
                   </a>{" "}
@@ -107,6 +108,17 @@ class ContactContent extends Component {
               linkedin_link="https://www.linkedin.com/in/daniël-li-b3a62b216"
               linkedin="Daniël Li"
               email="president@asianborrelclub.nl"
+            />
+            <ContactCard
+              image={tmMatthijs}
+              title="Secretary"
+              name="Matthijs Fok"
+              description="maintaining project operations and structure"
+              instagram_link="https://www.instagram.com/m.wkmf/"
+              instagram="@m.wkmf"
+              linkedin_link="https://www.linkedin.com/in/matthijs-fok-a0ab86181/"
+              linkedin="Matthijs Fok"
+              email="secretary@asianborrelclub.nl"
             />
             <ContactCard
               image={tmKevin}
