@@ -1,0 +1,52 @@
+@import "../colors";
+
+.gallery-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-primary-white;
+  padding-top: 4rem;
+  .gallery-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-auto-rows: 210px;
+    padding: 2.5%;
+    width: 70%;
+  }
+  .card-tall,
+  .card-wide {
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 600px) {
+    .card-tall {
+      grid-row: span 2 / auto;
+      grid-column: span 2 / auto;
+    }
+
+    .card-wide {
+      grid-column: span 2 / auto;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .gallery-page {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 2rem 0;
+    .gallery-grid {
+      width: 100%;
+      height: 100%;
+    }
+    .card-tall {
+      grid-row: span 2 / auto;
+      grid-column: span 2 / auto;
+    }
+
+    .card-wide {
+      grid-column: span 2 / auto;
+    }
+  }
+}
