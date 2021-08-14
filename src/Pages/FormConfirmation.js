@@ -10,7 +10,6 @@ class FormConfirmation extends Component {
       <>
         <Helmet>
           <title>ABC - Form Confirmation</title>
-          <meta http-equiv="refresh" content="5;url=/" />
         </Helmet>
         <Navbar />
         <FormConfirmationContent />

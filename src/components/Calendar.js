@@ -7,16 +7,20 @@ class Calendar extends Component {
   render() {
     return (
       <div id="calendar">
-        <img src={backImg} className="event-image" alt="friends eating pizza"></img>
+        <img
+          src={backImg}
+          className="event-image"
+          alt="friends eating pizza"
+        ></img>
         <h1>Calendar</h1>
         <div className="event">
-          <CalendarItem date="06-05-2021" title="Asian Board Games" />
-          <CalendarItem date="20-05-2021" title="Escape Room" />
-          <CalendarItem date="03-06-2021" title="Asian Family Feud" />
-          <CalendarItem date="17-06-2021" title="Guess the Picture" />
-          <CalendarItem date="03-07-2021" title="ABC PubQuiz & Drinks" />
+          <CalendarItem date="14-08-2021" title="Speeddating" />
+          <CalendarItem date="23-08-2021" title="ABC Beach Day" />
+          <CalendarItem date="11-09-2021" title="AMS Foodcrawl" />
+          <CalendarItem date="23-09-2021" title="Mid-Autumn Festival" />
+          <CalendarItem date="21-09-2021" title="Coming soon..." />
         </div>
-        ...and more to come!
+        <div>Follow our socials to get updates!</div>
       </div>
     );
   }

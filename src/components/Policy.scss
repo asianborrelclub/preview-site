@@ -20,11 +20,15 @@
     p {
       line-height: 1.4;
       margin-top: 1rem;
-      a:link {
-        text-decoration: none;
-        color: $color-primary-light;
-        font-style: italic;
-      }
+    }
+    ul {
+      margin-left: 1rem;
+    }
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-primary-light;
+      font-style: italic;
     }
   }
 }

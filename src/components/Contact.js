@@ -14,7 +14,7 @@ class Contact extends Component {
   render() {
     return (
       <div id="contact-page">
-        <h1>Our Board</h1>
+        <h1>Board 2020/2021</h1>
         <div className="card-teams">
           <TeamCard
             image={tmDaniel}
@@ -62,7 +62,7 @@ class Contact extends Component {
             image={tmJacky}
             name="Jacky Cheng"
             title="Head of External Affairs"
-            instagram="https://www.instagram.com/j.cheng96/"
+            instagram="https://www.instagram.com/j.hf.cheng/"
           />
 
           <TeamCard

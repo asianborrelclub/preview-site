@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./AboutUs.scss";
-import aboutImage from "../img/undraw_having_fun_iais_dark.svg";
+import aboutImage from "../img/undraw_having_fun_iais.svg";
 
 class AboutUs extends Component {
   render() {

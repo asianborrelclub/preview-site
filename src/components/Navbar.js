@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { NavbarItems } from "./NavbarItems";
-// eslint-disable-next-line
 import { Button } from "./Button";
 import "./Navbar.scss";
 import logo from "../img/h-logo-abc-full.svg";
@@ -21,6 +20,9 @@ class Navbar extends Component {
             <img src={logo} alt="logo" />
           </a>
         </div>
+        <a href="/membership" className="btn-mobile-register">
+          <Button>Join&nbsp;ABC</Button>
+        </a>
         <div className="menu-icon" onClick={this.handleClick}>
           <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
@@ -42,6 +44,9 @@ class Navbar extends Component {
             );
           })}
         </ul>
+        <a href="/membership">
+          <Button className="btn-register">Join&nbsp;ABC</Button>
+        </a>
       </nav>
     );
   }
