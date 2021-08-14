@@ -2,17 +2,26 @@ import React, { Component } from "react";
 import "./HomepageGallery.scss";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import gallery1 from "../img/gallery/1.jpg";
+import gallery2 from "../img/gallery/2.jpg";
+import gallery3 from "../img/gallery/3.jpg";
+import gallery4 from "../img/gallery/4.jpg";
+import gallery5 from "../img/gallery/5.jpg";
+import gallery6 from "../img/gallery/6.jpeg";
+import gallery7 from "../img/gallery/7.JPG";
+import gallery8 from "../img/gallery/8.jpeg";
+import gallery9 from "../img/gallery/9.jpeg";
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1tQNfGRcsmyxj_CaEjX4tZ7_-VvDo0DOY",
-  "https://drive.google.com/uc?export=view&id=1NlOeL9qLzWXxHv_Hf43bVE6KZRWu7xAS",
-  "https://drive.google.com/uc?export=view&id=1uIyrYdqlT44mBmKNv-NRaRj1i2eCOuVD",
-  "https://drive.google.com/uc?export=view&id=1bGo4NmD677SgIhBId333DotI6X4JsH8O",
-  "https://drive.google.com/uc?export=view&id=1moMehgeIq4oCdXYF_5alXNsN9kGmanCd",
-  "https://drive.google.com/uc?export=view&id=1rsyMxtaJ0v8FwQnW6RJYH_hbbpp3VBT4",
-  "https://drive.google.com/uc?export=view&id=1BB5zv5nSj0GkX5Bv3g0jhBsCzKkNBHTW",
-  "https://drive.google.com/uc?export=view&id=1ysdzxBpINaZtLVW5IBGhK5HUuXBjAs5m",
-  "https://drive.google.com/uc?export=view&id=1VOEmfPZUJ9pQj2BIGGAnRFJThIlAhJ3m",
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
+  gallery7,
+  gallery8,
+  gallery9,
 ];
 
 class HomepageGallery extends Component {
@@ -33,75 +42,48 @@ class HomepageGallery extends Component {
         <div className="gallery-grid">
           <div
             className="card card-wide"
-            style={{
-              backgroundImage:
-                "url(https://drive.google.com/uc?export=view&id=1tQNfGRcsmyxj_CaEjX4tZ7_-VvDo0DOY)",
-            }}
+            style={{ backgroundImage: `url(${gallery1})` }}
             onClick={() => this.setState({ isOpen: true, photoIndex: 0 })}
           ></div>
           <div
             className="card card-wide"
-            style={{
-              backgroundImage:
-                "url(https://drive.google.com/uc?export=view&id=1NlOeL9qLzWXxHv_Hf43bVE6KZRWu7xAS)",
-            }}
+            style={{ backgroundImage: `url(${gallery2})` }}
             onClick={() => this.setState({ isOpen: true, photoIndex: 1 })}
           ></div>
           <div
             className="card card-tall"
-            style={{
-              backgroundImage:
-                "url(https://drive.google.com/uc?export=view&id=1uIyrYdqlT44mBmKNv-NRaRj1i2eCOuVD)",
-            }}
+            style={{ backgroundImage: `url(${gallery3})` }}
             onClick={() => this.setState({ isOpen: true, photoIndex: 2 })}
           ></div>
           <div
             className="card card-tall"
-            style={{
-              backgroundImage:
-                "url(https://drive.google.com/uc?export=view&id=1bGo4NmD677SgIhBId333DotI6X4JsH8O)",
-            }}
+            style={{ backgroundImage: `url(${gallery4})` }}
             onClick={() => this.setState({ isOpen: true, photoIndex: 3 })}
           ></div>
 
           <div
             className="card card-tall"
-            style={{
-              backgroundImage:
-                "url(https://drive.google.com/uc?export=view&id=1moMehgeIq4oCdXYF_5alXNsN9kGmanCd)",
-            }}
+            style={{ backgroundImage: `url(${gallery5})` }}
             onClick={() => this.setState({ isOpen: true, photoIndex: 4 })}
           ></div>
           <div
             className="card card-wide"
-            style={{
-              backgroundImage:
-                "url(https://drive.google.com/uc?export=view&id=1rsyMxtaJ0v8FwQnW6RJYH_hbbpp3VBT4)",
-            }}
+            style={{ backgroundImage: `url(${gallery6})` }}
             onClick={() => this.setState({ isOpen: true, photoIndex: 5 })}
           ></div>
           <div
             className="card card-wide"
-            style={{
-              backgroundImage:
-                "url(https://drive.google.com/uc?export=view&id=1BB5zv5nSj0GkX5Bv3g0jhBsCzKkNBHTW)",
-            }}
+            style={{ backgroundImage: `url(${gallery7})` }}
             onClick={() => this.setState({ isOpen: true, photoIndex: 6 })}
           ></div>
           <div
             className="card card-tall"
-            style={{
-              backgroundImage:
-                "url(https://drive.google.com/uc?export=view&id=1ysdzxBpINaZtLVW5IBGhK5HUuXBjAs5m)",
-            }}
+            style={{ backgroundImage: `url(${gallery8})` }}
             onClick={() => this.setState({ isOpen: true, photoIndex: 7 })}
           ></div>
           <div
             className="card card-tall"
-            style={{
-              backgroundImage:
-                "url(https://drive.google.com/uc?export=view&id=1VOEmfPZUJ9pQj2BIGGAnRFJThIlAhJ3m)",
-            }}
+            style={{ backgroundImage: `url(${gallery9})` }}
             onClick={() => this.setState({ isOpen: true, photoIndex: 8 })}
           ></div>
         </div>
