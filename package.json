@@ -9,6 +9,7 @@
     "react-dom": "^16.13.1",
     "react-grid-gallery": "^0.5.5",
     "react-helmet": "^6.1.0",
+    "react-image-lightbox": "^5.1.4",
     "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3"
