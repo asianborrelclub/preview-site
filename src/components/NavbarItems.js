@@ -17,7 +17,7 @@ export const NavbarItems = [
 
   {
     title: "Partners",
-    url: "#partners",
+    url: "/#partners",
     cName: "nav-links",
   },
 

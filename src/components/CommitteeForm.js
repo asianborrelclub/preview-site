@@ -3,11 +3,9 @@ import "./CommitteeContent.scss";
 
 function encode(data) {
   const formData = new FormData();
-
-  for (const key of Object.keys(data)) {
-    formData.append(key, data[key]);
-  }
-
+  Object.keys(data).forEach((k) => {
+    formData.append(k, data[k]);
+  });
   return formData;
 }
 
@@ -63,6 +61,7 @@ class CommitteeForm extends Component {
     const form = e.target;
     fetch("/", {
       method: "POST",
+      // headers: { "Content-Type": "multipart/form-data" },
       body: encode({
         "form-name": form.getAttribute("name"),
         ...this.state,
@@ -117,6 +116,18 @@ class CommitteeForm extends Component {
               <input
                 type="date"
                 name="date-of-birth"
+                required
+                onChange={this.handleChange}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Phone number:
+              <input
+                type="tel"
+                name="phone-number"
+                id="tel"
                 required
                 onChange={this.handleChange}
               />
@@ -237,6 +248,32 @@ class CommitteeForm extends Component {
           <div className="asterisk">
             *must be a PDF or Word document! (.pdf, .doc/.docx)
           </div>
+          <p className="terms-accept">
+            <input
+              type="checkbox"
+              id="terms-accept"
+              name="terms-accept"
+              required
+            />
+            <label htmlFor="terms-accept">
+              I accept the&nbsp;
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/terms-and-conditions"
+              >
+                Terms and Conditions
+              </a>
+              &nbsp; and the&nbsp;
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/privacy-policy"
+              >
+                Privacy Policy
+              </a>
+            </label>
+          </p>
 
           <button type="submit">Submit</button>
         </form>

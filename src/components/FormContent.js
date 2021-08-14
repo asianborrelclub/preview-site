@@ -18,6 +18,7 @@ class FormContent extends Component {
               click here.
             </a>
           </p>
+          <p id="form-description">To ensure we receive your application correctly, please use Chrome or Firefox!</p>
           <CommitteeForm />
         </div>
       </div>
