@@ -30,7 +30,7 @@ class CommitteeContent extends Component {
           <CommitteeItems
             url="https://www.youtube.com/embed/_JHCzTXTNwI"
             name="Events"
-            text="The Committee of Events has the responsibility to organize all events. Our goal is to create opportunities for students to hang out, meet new people and build friendships in a fun way. For now, the Asian Borrel Club has online events every two weeks, but in the near future we hope to hosts events in real life."
+            text="The Committee of Events has the responsibility to organize all events. Our goal is to create opportunities for students to hang out, meet new people and build friendships in a fun way. As physical events are possible again, we are transitioning from online to more physical events. Online gaming will be organized by our sub-organisation ABC Gaming."
           />
           <CommitteeItems
             url="https://www.youtube.com/embed/0ooBKbDTYzo"
