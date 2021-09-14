@@ -9,6 +9,8 @@ import wgmmBanner from "../img/partners/wagamama/wgmm_1.jpeg";
 import wgmmLogo from "../img/partners/wagamama/wgmm_logo.svg";
 import tfmBanner from "../img/partners/the-foodmarket/tfm_1.png";
 import tfmLogo from "../img/partners/the-foodmarket/tfm_logo.svg";
+import yhpBanner from "../img/partners/yuans-hotpot/yhp_1.jpg";
+import yhpLogo from "../img/partners/yuans-hotpot/yhp_logo.png";
 
 class Partners extends Component {
   render() {
@@ -36,9 +38,17 @@ class Partners extends Component {
             banner={tfmBanner}
             logo={tfmLogo}
           />
+          <PartnerCard
+            link="/partners/yuans-hot-pot"
+            banner={yhpBanner}
+            logo={yhpLogo}
+          />
           <div className="partner-card-contact">...and more to come!</div>
         </div>
-        <div className="partners-contactus">Interested in becoming an ABC Partner? <a href="/contact">Contact us</a>.</div>
+        <div className="partners-contactus">
+          Interested in becoming an ABC Partner?{" "}
+          <a href="/contact">Contact us</a>.
+        </div>
       </div>
     );
   }
