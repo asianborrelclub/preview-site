@@ -425,7 +425,14 @@ class MembershipContent extends Component {
                   rel="noopener noreferrer"
                   href="/terms-and-conditions"
                 >
-                  Terms and Conditions
+                  Terms and Conditions,
+                </a>{" "}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1Q6plLTb1tJ6NY2zpRdlYoXvkS3nu7COs/view?usp=sharing"
+                >
+                  House Rules,
                 </a>{" "}
                 and the{" "}
                 <a
