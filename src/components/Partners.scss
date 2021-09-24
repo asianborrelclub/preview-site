@@ -34,7 +34,6 @@
           transform: scale(1.15);
         }
       }
-      
     }
     .partner-card-contact {
       background-color: $color-primary-black;
@@ -43,13 +42,22 @@
   }
   .partners-contactus {
     text-align: center;
-    a{
+    a {
       color: $color-primary-light;
     }
   }
   @media only screen and (max-width: 768px) {
     h1 {
       padding: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .partner-cards {
+      .partner-card {
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
   }
 }
