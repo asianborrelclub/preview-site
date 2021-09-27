@@ -62,9 +62,10 @@ class PartnersContent extends Component {
             </div>
 
             <div className="partners-discountpolicy">
-              Not valid in combination with other active deals. Please show your
-              membership card in advance before ordering, so our partners are
-              aware of it.
+              DISCLAIMER:<br/>
+              Please show your membership card in <u><b>BEFORE</b></u> ordering and/or
+              mention that you want to make use of the ABC deal when making a reservation, so our partners are aware of it!<br/> Not
+              valid in combination with other active deals. 
             </div>
           </div>
         </div>
