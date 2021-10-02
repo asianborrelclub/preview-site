@@ -14,7 +14,7 @@ class Calendar extends Component {
         ></img>
         <h1>Calendar</h1>
         <div className="event">
-          <CalendarItem date="18-10-2021" title="ABC Borrel" />
+          <CalendarItem date="18-10-2021" title="ABC's First Borrel" />
           <CalendarItem date="21-10-2021" title="Escape The City" />
           <CalendarItem
             date="11-11-2021"
