@@ -19,6 +19,8 @@ import PartnerTeaGuys from "./Pages/PartnerTeaGuys";
 import PartnerWagamama from "./Pages/PartnerWagamama";
 import PartnerFoodmarket from "./Pages/PartnerFoodmarket";
 import PartnerYuansHotPot from "./Pages/PartnerYuansHotPot";
+import PartnerBarB from "./Pages/PartnerBarB";
+import PartnerHoiTin from "./Pages/PartnerHoiTin";
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
       <Route path="/partners/wagamama" exact component={PartnerWagamama} />
       <Route path="/partners/the-foodmarket" exact component={PartnerFoodmarket} />
       <Route path="/partners/yuans-hot-pot" exact component={PartnerYuansHotPot} />
+      <Route path="/partners/bar-b" exact component={PartnerBarB} />
+      <Route path="/partners/hoi-tin" exact component={PartnerHoiTin} />
     </Router>
   );
 }

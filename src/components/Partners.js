@@ -11,6 +11,10 @@ import tfmBanner from "../img/partners/the-foodmarket/tfm_1.png";
 import tfmLogo from "../img/partners/the-foodmarket/tfm_logo.svg";
 import yhpBanner from "../img/partners/yuans-hotpot/yhp_1.jpg";
 import yhpLogo from "../img/partners/yuans-hotpot/yhp_logo.png";
+import bbBanner from "../img/partners/bar-b/bb_2.jpg";
+import bbLogo from "../img/partners/bar-b/bb_logo.png";
+import htBanner from "../img/partners/hoi-tin/ht_1.jpg";
+import htLogo from "../img/partners/hoi-tin/ht_logo.png";
 
 class Partners extends Component {
   render() {
@@ -42,6 +46,16 @@ class Partners extends Component {
             link="/partners/yuans-hot-pot"
             banner={yhpBanner}
             logo={yhpLogo}
+          />
+          <PartnerCard
+            link="/partners/bar-b"
+            banner={bbBanner}
+            logo={bbLogo}
+          />
+          <PartnerCard
+            link="/partners/hoi-tin"
+            banner={htBanner}
+            logo={htLogo}
           />
           <div className="partner-card-contact">...and more to come!</div>
         </div>
