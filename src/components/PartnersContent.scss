@@ -20,9 +20,11 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+      align-items: flex-start;
       .partners-logo {
         width: calc(80vw - 3rem);
         padding: 1.5rem 0;
+        height: auto;
       }
     }
   }
@@ -107,7 +109,7 @@ body {
         .partners-logo {
           width: initial;
           padding: 0;
-          height: 15rem;
+          // height: 15rem;
           max-width: 100%;
           align-self: center;
           padding: 0 2rem;
