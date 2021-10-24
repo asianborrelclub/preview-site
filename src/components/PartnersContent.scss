@@ -51,6 +51,12 @@ body {
       h2 {
         font-weight: normal;
       }
+      .partners-policy-box {
+        margin-top: 1rem;
+      }
+      ul {
+        list-style-type: none;
+      }
     }
 
     .partners-contact {
@@ -70,10 +76,6 @@ body {
           color: $color-primary-light;
         }
       }
-    }
-    .partners-discountpolicy {
-      margin-top: 4rem;
-      margin-bottom: 2rem;
     }
   }
 }
