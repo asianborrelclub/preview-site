@@ -29,14 +29,17 @@ class PartnersContent extends Component {
               <div>{this.props.about}</div>
               <div>{this.props.about2}</div>
             </div>
-            <div className="partners-deal">
+            <div className="partners-deal partners-deal-top">
               <h2>ABC Deal:</h2>
-              {this.props.deal}
-              <h2 className="partners-policy-box">ABC Policy:</h2>
+              <ul>
+                <li>{this.props.deal}</li>
+              </ul>
+            </div>
+            <div className="partners-deal">
+              <h2>ABC Policy:</h2>
               <ul>
                 <li>Show your membership card BEFORE ordering and/or mention that you want to make use of the ABC deal/discount when making a reservation. If not, the Partner is allowed to not give the discount.</li>
                 <li>Not valid in combination with other active deals.</li>
-                <li>Not valid at official public holidays.</li>
               </ul>
             </div>
             <div className="partners-contact">
