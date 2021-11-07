@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./ContactContent.scss";
 import ContactCard from "./ContactCard";
-import tmDaniel from "../img/tmdaniel.png";
-import tmSofia from "../img/tmsofia.png";
-import tmChristine from "../img/tmchristine.png";
+import tmDaniel from "../img/tmdaniel.jpg";
+import tmSofia from "../img/tmsofia.jpg";
+import tmChristine from "../img/tmchristine.jpg";
 import tmRyan from "../img/tmryan.jpg";
 import tmKevin from "../img/tmkevin.jpg";
 import tmJacky from "../img/tmjacky.jpg";
-import tmYenly from "../img/tmyenly.png";
-import tmMatthijs from "../img/tmmatthijs.jpeg";
+import tmYenly from "../img/tmyenly.jpg";
+import tmMatthijs from "../img/tmmatthijs.jpg";
 
 class ContactContent extends Component {
   render() {
