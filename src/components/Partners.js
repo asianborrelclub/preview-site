@@ -15,6 +15,8 @@ import bbBanner from "../img/partners/bar-b/bb_2.jpg";
 import bbLogo from "../img/partners/bar-b/bb_logo.png";
 import htBanner from "../img/partners/hoi-tin/ht_1.jpg";
 import htLogo from "../img/partners/hoi-tin/ht_logo.png";
+import ctBanner from "../img/partners/chatime/ct_1.png";
+import ctLogo from "../img/partners/chatime/ct_logo.png";
 
 class Partners extends Component {
   render() {
@@ -56,6 +58,11 @@ class Partners extends Component {
             link="/partners/hoi-tin"
             banner={htBanner}
             logo={htLogo}
+          />
+          <PartnerCard
+            link="/partners/chatime"
+            banner={ctBanner}
+            logo={ctLogo}
           />
           <div className="partner-card-contact">...and more to come!</div>
         </div>
