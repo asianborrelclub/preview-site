@@ -1,4 +1,5 @@
 ## asian borrel club preview website
 
-npm start to start developing
+npm install to setup environment
 
+npm start to start developing
