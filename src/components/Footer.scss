@@ -1,6 +1,117 @@
 @import "../colors";
 
+
 .footer {
+  .column{
+  padding-top: 48px;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+  height: max-content;
+  }
+  .row2{
+
+    width: 100%;
+    display: table-footer-group;
+
+  }
+  .socialb{
+    max-width: fit-content;
+  }
+  .column2{
+    padding-top: 55px;
+    float: left;
+    width: 40%;
+    height: max-content;
+    }
+  .column3{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+      }
+  .row{
+    padding-top: 55px;
+    padding-bottom: 50px;
+    width: 80%;
+    content: "";
+    display: table-footer-group;
+    clear:  both;
+    max-width: 1500px;
+  }
+  .c2{
+    margin-top: 30px;
+    
+  }
+  .information-tab{
+    padding-top: 30px;
+    text-align: left;
+
+  }
+  .info-link{
+    color: rgb(58,175,169);
+    padding-bottom: 10px;
+    text-decoration: underline;
+  }
+  
+  .info-link:hover{
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .underlinenone:link{
+    text-decoration: none;
+  }
+
+  .underlinenone:visited{
+    text-decoration: none;
+  }
+  .underlinenone:hover{
+    text-decoration: underline;
+  }
+  .underlinenone:active{
+    text-decoration: underline;
+  }
+
+  .push50{
+    padding-right: 200px;
+  }
+  .d2{
+    display: none;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1366px) {
+    .column {
+      width: 100%;
+      text-align: left;
+    }
+    .d1{
+      display: none;
+    }
+    .d2{
+      display: table-column-group;
+    }
+    
+    .column2{
+      text-align: left;
+    }
+    .h3{
+      text-align: left;
+    }
+    img{
+      max-width: fit-content;
+    }
+  }
+  @media screen and (max-width:1115px) {
+    img{
+      max-width: fit-content ;
+    }
+  }
+  .left{
+    text-align:left;
+    float:left;
+    }
   background-color: $color-primary-black;
   color: $color-primary-white;
   display: flex;
@@ -9,12 +120,11 @@
   align-items: center;
   flex-direction: column;
   img {
-    width: 25vw;
-    min-width: 250px;
+    width: 25rem;
+    min-width: 230px;
   }
   .footer-text {
     padding-bottom: 1rem;
-    text-align: center;
   }
   .btn {
     color: $color-primary-white;
@@ -44,6 +154,14 @@
   }
 
   @media screen and (max-width: 768px) {
+    img {
+      width: 25rem;
+      // max-width: 160px;
+      // padding-right: 50px;
+    }
+    .h3{
+      text-align: left;
+    }
     .btn-social {
       grid-gap: 0;
       padding: 1rem;
@@ -51,10 +169,14 @@
       a {
         margin: 1rem;
       }
+      
     }
   }
 
   @media screen and (max-width: 450px) {
+    .push50{
+      padding-right: 157px;
+    }
     .resources {
       width: 90%;
       margin-bottom: 1rem;

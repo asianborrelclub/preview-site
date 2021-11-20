@@ -32,6 +32,15 @@ class SocialButton extends Component {
             <i className="fab fa-discord" />
           </button>
         </a>
+        <a
+          href="https://nl.linkedin.com/in/asian-borrel-club"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="btn btn-discord">
+            <i class="fab fa-linkedin-in"></i>
+          </button>
+        </a>
       </div>
     );
   }
