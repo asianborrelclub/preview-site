@@ -14,16 +14,13 @@ class Calendar extends Component {
         ></img>
         <h1>Calendar</h1>
         <div className="event">
-          <CalendarItem date="18-10-2021" title="Intro Groups Borrel" />
-          <CalendarItem date="21-10-2021" title="Escape The City" />
           <CalendarItem
-            date="11-11-2021"
-            title="ABC Anniversary / Halloween Party"
+            date="15-12-2021"
+            title="ABC Gaming Valorant Tournament"
           />
-          <CalendarItem
-            date="18-11-2021"
-            title="Pingpong & Beerpong Borrel"
-          />
+          <CalendarItem date="17-12-2021" title="Christmas Dinner" />
+          <CalendarItem date="13-01-2022" title="New Year's Bingo Borrel" />
+          <CalendarItem date="20-01-2022" title="Dumpling Day Workshop" />
         </div>
         <div>Follow our socials to get updates!</div>
       </div>
