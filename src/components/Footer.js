@@ -29,7 +29,7 @@ class Footer extends Component {
       </div>
       <div class="information-tab">
     <p>KvK-number: <p></p>
-    1234567890</p>
+    81660200</p>
     </div>
 </div>
 <div class="column c2" >
