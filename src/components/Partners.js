@@ -17,6 +17,8 @@ import htBanner from "../img/partners/hoi-tin/ht_1.jpg";
 import htLogo from "../img/partners/hoi-tin/ht_logo.png";
 import ctBanner from "../img/partners/chatime/ct_1.png";
 import ctLogo from "../img/partners/chatime/ct_logo.png";
+import ggBanner from "../img/partners/golden-garden/gg_1.jpeg";
+import ggLogo from "../img/partners/golden-garden/gg_logo.png";
 
 class Partners extends Component {
   render() {
@@ -49,11 +51,7 @@ class Partners extends Component {
             banner={yhpBanner}
             logo={yhpLogo}
           />
-          <PartnerCard
-            link="/partners/bar-b"
-            banner={bbBanner}
-            logo={bbLogo}
-          />
+          <PartnerCard link="/partners/bar-b" banner={bbBanner} logo={bbLogo} />
           <PartnerCard
             link="/partners/hoi-tin"
             banner={htBanner}
@@ -63,6 +61,11 @@ class Partners extends Component {
             link="/partners/chatime"
             banner={ctBanner}
             logo={ctLogo}
+          />
+          <PartnerCard
+            link="/partners/golden-garden"
+            banner={ggBanner}
+            logo={ggLogo}
           />
           <div className="partner-card-contact">...and more to come!</div>
         </div>
