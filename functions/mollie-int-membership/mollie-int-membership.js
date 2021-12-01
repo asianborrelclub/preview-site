@@ -10,7 +10,7 @@ const handler = async (event) => {
   const payment = await mollieClient.payments.create({
     amount: {
       currency: "EUR",
-      value: "5.00",
+      value: "10.00",
     },
     description: "ABC Membership",
     redirectUrl: "https://www.asianborrelclub.nl/purchase-success",

@@ -4,7 +4,7 @@ import "./MembershipInfo.scss";
 import MembershipCard from "../img/membership-card.svg";
 import MembershipCardHold from "../img/membership-card-hold.svg";
 
-class MembershipInfo extends Component {
+export default class MembershipInfo extends Component {
   render() {
     return (
       <div className="membershipinfo-page">
@@ -43,10 +43,8 @@ class MembershipInfo extends Component {
               an official ABC General Member, but also gives you exclusive deals
               at our partners, ABC Events and ABC Merchandise.
             </p>
-            <p>Partners will be revealed in the coming weeks. STAY TUNED! </p>
             <p>
-              To celebrate this, the one year membership will be offered with
-              the special price of only €5,- (original price €10,-).
+              More partners will be revealed in the coming weeks. STAY TUNED!{" "}
             </p>
             <a className="add-button" href="/membership/register">
               <button>Register here</button>
@@ -108,5 +106,3 @@ class MembershipInfo extends Component {
     );
   }
 }
-
-export default MembershipInfo;
