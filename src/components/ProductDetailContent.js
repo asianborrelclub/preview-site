@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./ProductPageContent.scss";
+
 import "./ProductDetailContent.scss"
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -50,10 +50,40 @@ class ProductDetailContent extends Component {
   <div class="col">XLL</div>
 
 </div>
-           
-               
 
-                  size guide(todo)
+
+    
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+        <table>
+                <tbody>
+                  <tr>
+                    <th></th>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>L</th>
+                    <th>XL</th>
+                  </tr>
+                  <tr>
+                    <td>LENGTH</td>
+                    <td>68cm</td>
+                    <td>71cm</td>
+                    <td>73cm</td>
+                    <td>73cm</td>
+                  </tr>
+                  <tr>
+                    <td>BODY WIDTH</td>
+                    <td>50cm</td>
+                    <td>55cm</td>
+                    <td>60cm</td>
+                    <td>66cm</td>
+                  </tr>
+                </tbody>
+              </table>		</div>
+	</div>
+</div>
 
                   <div className="sizelabel"> Pre-Order</div>
 
@@ -72,8 +102,10 @@ class ProductDetailContent extends Component {
                     <div>Model: Unisex</div>
                     <div>Fabric color: Black</div>
                   </div>
-
+                  <div className="push"><a class="button" href="#popup1">size guide</a></div>
+                  
                 </div>
+                
               </div>
               
               </div>
