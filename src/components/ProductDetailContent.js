@@ -47,7 +47,7 @@ class ProductDetailContent extends Component {
   <div class="col">M</div>
   <div class="col">L</div>
   <div class="col">XL</div>
-  <div class="col">XLL</div>
+  <div class="col">XXL</div>
 
 </div>
 
@@ -57,10 +57,10 @@ class ProductDetailContent extends Component {
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-        <table>
+        <table class="center">
                 <tbody>
                   <tr>
-                    <th></th>
+                    <th>XLL</th>
                     <th>S</th>
                     <th>M</th>
                     <th>L</th>

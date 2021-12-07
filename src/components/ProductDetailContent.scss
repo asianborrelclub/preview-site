@@ -349,7 +349,7 @@
     transition: all 0.3s ease-out;
     background: $color-primary-black;
     margin-top: 10px;
-    font-family: Tahoma, Arial,
+    font-family: Tahoma, Arial !important;
   }
   .button:hover {
     background: black;
@@ -433,4 +433,8 @@
     width:70%; 
     margin-left:15%; 
     margin-right:15%;
+}
+.center {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
