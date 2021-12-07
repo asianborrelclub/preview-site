@@ -349,9 +349,10 @@
     transition: all 0.3s ease-out;
     background: $color-primary-black;
     margin-top: 10px;
+    font-family: Tahoma, Arial,
   }
   .button:hover {
-    background: $color-primary-white
+    background: black;
   }
   
   .overlay {
@@ -378,6 +379,7 @@
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
+    
   }
   
   .popup h2 {
@@ -423,6 +425,7 @@
     font-style: 15px;
     max-width: 100%;
     margin-left: 50px;
+    padding: 5px;
 
 
   }  

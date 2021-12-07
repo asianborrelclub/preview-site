@@ -102,7 +102,7 @@ class ProductDetailContent extends Component {
                     <div>Model: Unisex</div>
                     <div>Fabric color: Black</div>
                   </div>
-                  <div className="push"><a class="button" href="#popup1">size guide</a></div>
+                  <div className="push"><a class="button" href="#popup1">Size guide</a></div>
                   
                 </div>
                 
