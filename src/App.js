@@ -23,6 +23,7 @@ import PartnerBarB from "./Pages/PartnerBarB";
 import PartnerHoiTin from "./Pages/PartnerHoiTin";
 import PartnerChatime from "./Pages/PartnerChatime";
 import ProductsList from "./Pages/Products"
+import ProductsDetail from "./Pages/ProductDetail";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
       <Route path="/partners/hoi-tin" exact component={PartnerHoiTin} />
       <Route path="/partners/chatime" exact component={PartnerChatime} />
       <Route path="/products" exact component={ProductsList} />
+      <Route path="/detail" exact component={ProductsDetail} />
     </Router>
   );
 }

@@ -1,0 +1,338 @@
+@import "../colors";
+
+.product-page {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5%;
+  color: white;
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $color-primary-light;
+    font-style: italic;
+  }
+
+  .landing-page {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: initial;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .hoodie-graphic {
+      width: 50vw;
+      position: relative;
+      display: inline-block;
+      .hoodie-front {
+        height: 40rem;
+      }
+      .hoodie-back {
+        height: 40rem;
+        display: none;
+        position: absolute;
+        top: 0;
+      }
+      &:hover .hoodie-back {
+        display: flex;
+        justify-self: center;
+      }
+      &:hover .hoodie-front {
+        visibility: hidden;
+      }
+    }
+    .hoodie-info {
+      width: 50vw;
+      .title {
+
+        font-weight: normal;
+        
+      }
+      .pricetag {
+        font-size: 2em;
+        font-weight: normal;
+        
+        &.sale {
+          text-decoration: line-through;
+          color: $color-primary-black;
+          font-size: 28px;
+        }
+      }
+      margin-left: 2rem;
+      .undertitle {
+        font-size: 18px;
+        margin-top: 2rem;
+        div:nth-child(3) {
+          margin-top: 1rem;
+        }
+      }
+      h2 {
+        font-weight: normal;
+        margin-top: 2rem;
+      }
+
+      .btn-preorder,
+      .btn-info {
+        border: none;
+        position: relative;
+        color: #fff;
+        background: $color-primary-black;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        padding: 1em 4em;
+        margin-right: 1rem;
+        margin-top: 6em;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.4s ease-out, color 0.4s ease-out;
+        &:hover {
+          background-color: #fff;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+  .hoodie-section-b,
+  .hoodie-section-a {
+    margin: 2rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    .hoodie-section-a-text,
+    .hoodie-section-b-text {
+      h1 {
+        margin-top: 4rem;
+      }
+      h1:nth-child(1),
+      h1:nth-child(4) {
+        margin-top: 0rem;
+      }
+      margin-left: 2rem;
+      margin-right: 2rem;
+      max-width: 30%;
+    }
+    .hoodie-section-a-img,
+    .hoodie-section-b-img {
+      height: 30vw;
+    }
+  }
+  .hoodie-section-b {
+    flex-direction: row-reverse;
+    .hoodie-section-b-text {
+      table,
+      td,
+      th {
+        padding: 0.5rem;
+        border: 2px solid white;
+      }
+
+      table {
+        width: 50%;
+        border-collapse: collapse;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .landing-page {
+      align-items: center;
+      margin: 2rem 2rem 0 2rem;
+      .hoodie-info {
+        .btn-preorder,
+        .btn-info {
+          margin-top: 2rem;
+          width: 100%;
+        }
+      }
+    }
+    .hoodie-section-a,
+    .hoodie-section-b {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .hoodie-section-a-text,
+      .hoodie-section-b-text {
+        max-width: 70%;
+        margin: 0;
+        margin-top: 2rem;
+      }
+      .hoodie-section-a-img,
+      .hoodie-section-b-img {
+        height: initial;
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .landing-page {
+      flex-direction: column;
+      height: initial;
+      .hoodie-info {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        .hoodie-cta {
+          align-self: center;
+        }
+      }
+      .hoodie-graphic {
+        width: initial;
+      }
+    }
+    .hoodie-section-a,
+    .hoodie-section-b {
+      .hoodie-section-a-text,
+      .hoodie-section-b-text {
+        max-width: 100%;
+        margin: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .hoodie-section-b {
+      .hoodie-section-b-text {
+        table,
+        td,
+        th {
+          padding: 0.25rem;
+        }
+      }
+    }
+  }
+}
+.size{
+    margin-left: 150px;
+    padding-left: 150px;
+}
+@media only screen and (max-width: 768px) {
+    .size{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+  }
+
+.hoodie-preorder {
+  padding-top: 2rem;
+  color: $color-primary-white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-primary-dark;
+  .hoodie-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+
+    .form-product-img {
+      width: 40%;
+      .carousel {
+        .control-dots .dot {
+          background: $color-primary;
+        }
+        .control-prev.control-arrow:before {
+          border-right: 8px solid $color-primary;
+        }
+        .control-next.control-arrow:before {
+          border-left: 8px solid $color-primary;
+        }
+      }
+    }
+    .hoodie-form-information {
+      align-self: flex-start;
+      margin: 0 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hoodie-form {
+      flex-direction: column;
+      .form-product-img {
+        width: initial;
+        height: initial;
+        margin: 0 2rem;
+      }
+
+      .hoodie-form-information {
+        align-self: center;
+        margin: 0;
+
+        form {
+          padding: 0;
+        }
+      }
+    }
+    h1 {
+      margin: 0 2rem;
+      align-self: center;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .hoodie-form {
+      padding: 2rem 0;
+      .hoodie-form-information {
+        align-self: center;
+        margin: 0;
+
+        form {
+          padding: 0;
+
+          input[type="text"],
+          input[type="email"],
+          select,
+          h1,
+          button {
+            width: 80vw;
+          }
+          span {
+            width: 80vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sizelabel{
+    margin-top: 15px;
+    padding: 4px;
+    background-color: #17252A;
+    text-align: center;
+    font-size: 25px;
+    border: 1px black solid;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1 0 18%; /* The important bit. This percentage decides your columns. 
+   The percent can be px. It just represents your minimum starting width.
+    */
+    margin: 4px;
+    font-size: 25px;
+    background: rgb(255, 255, 255);
+    height: 50px;
+    color: rgb(43,122,120);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .col:hover {
+      cursor: pointer;
+      background: rgb(75, 160, 172);
+  }
+  .col:focus{
+    background: rgba(75, 161, 172, 0.534);
+  }
+  .col:active{
+    background: rgba(75, 161, 172, 0.473);
+  }
+//   methode to change color
