@@ -91,9 +91,9 @@ class ProductDetailContent extends Component {
     
                   <h2>Delivery & payment</h2>
                   <div className="details">
-                  <div>Standard Home Delivery €6/ Free over €100 in 4-5 workind days  </div>
-                  <div>Standard Pickup Location €6/ Free over €100 in 4-5 workind days  </div>
-                  <div>Climat-smart Home Delivery €6/ Free over €100 in 4-5 workind days  </div>
+                  <div>Standard Home Delivery €6/ Free over €100 in 4-5 working days  </div>
+                  <div>Standard Pickup Location €6/ Free over €100 in 4-5 working days  </div>
+                  <div>Climat-smart Home Delivery €6/ Free over €100 in 4-5 working days  </div>
                   </div>
                   <h2>Details</h2>
                   <div className="details">

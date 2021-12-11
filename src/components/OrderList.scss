@@ -1,0 +1,19 @@
+#content1
+{
+    display:none;
+}
+
+#content2
+{
+    display:none;
+}
+
+#toggle1:checked ~ #content1
+{
+  display: block;
+}
+
+#toggle2:checked ~ #content2
+{
+  display: block;
+}

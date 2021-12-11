@@ -14,9 +14,7 @@ class ProductsList extends Component {
             <section>
   <div class="about-us">
     <h2>Our products</h2>
-    <p>Ben
-the duck overlord. he can perform mind control on ducks of all kinds.
-Look, its Ben with his army of ducks again!</p>
+    <p>Random text hier bla bla bla</p>
 </div>
     <div class="image-wrapper">
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/KeizersgrachtReguliersgrachtAmsterdam.jpg" />
