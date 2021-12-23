@@ -44,7 +44,7 @@ export default class MembershipInfo extends Component {
               at our partners, ABC Events and ABC Merchandise.
             </p>
             <p>
-              More partners will be revealed in the coming weeks. STAY TUNED!{" "}
+              More partners will be revealed in the coming weeks. STAY TUNED!
             </p>
             <a className="add-button" href="/membership/register">
               <button>Register here</button>
@@ -57,7 +57,12 @@ export default class MembershipInfo extends Component {
               <li>Be the first one to get notified for events</li>
             </ul>
             <p>
-              *The membership cards are valid from 16-07-2021 until 31-08-2022
+              <b>
+                <u>
+                  The membership cards are valid from 16-07-2021 until
+                  31-08-2022 and costs €10,-
+                </u>
+              </b>
             </p>
           </div>
           <div className="membershipinfo-upper-right">
