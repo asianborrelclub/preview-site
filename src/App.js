@@ -23,6 +23,7 @@ import PartnerBarB from "./Pages/PartnerBarB";
 import PartnerHoiTin from "./Pages/PartnerHoiTin";
 import PartnerChatime from "./Pages/PartnerChatime";
 import PartnerGoldenGarden from "./Pages/PartnerGoldenGarden";
+import PartnerJensBing from "./Pages/PartnerJensBing";
 
 function App() {
   return (
@@ -40,15 +41,32 @@ function App() {
       <Route path="/privacy-policy" exact component={PrivacyPolicy} />
       <Route path="/terms-and-conditions" exact component={ToS} />
       <Route path="/shipping-policy" exact component={ShippingPolicy} />
-      <Route path="/partners/fullmoon-garden" exact component={PartnerFullmoon} />
+      <Route
+        path="/partners/fullmoon-garden"
+        exact
+        component={PartnerFullmoon}
+      />
       <Route path="/partners/tea-guys" exact component={PartnerTeaGuys} />
       <Route path="/partners/wagamama" exact component={PartnerWagamama} />
-      <Route path="/partners/the-foodmarket" exact component={PartnerFoodmarket} />
-      <Route path="/partners/yuans-hot-pot" exact component={PartnerYuansHotPot} />
+      <Route
+        path="/partners/the-foodmarket"
+        exact
+        component={PartnerFoodmarket}
+      />
+      <Route
+        path="/partners/yuans-hot-pot"
+        exact
+        component={PartnerYuansHotPot}
+      />
       <Route path="/partners/bar-b" exact component={PartnerBarB} />
       <Route path="/partners/hoi-tin" exact component={PartnerHoiTin} />
       <Route path="/partners/chatime" exact component={PartnerChatime} />
-      <Route path="/partners/golden-garden" exact component={PartnerGoldenGarden} />
+      <Route
+        path="/partners/golden-garden"
+        exact
+        component={PartnerGoldenGarden}
+      />
+      <Route path="/partners/jens-bing" exact component={PartnerJensBing} />
     </Router>
   );
 }
