@@ -21,6 +21,8 @@ import ggBanner from "../img/partners/golden-garden/gg_1.jpeg";
 import ggLogo from "../img/partners/golden-garden/gg_logo.png";
 import jbBanner from "../img/partners/jens-bing/jb_1.png";
 import jbLogo from "../img/partners/jens-bing/jb_logo.svg";
+import jchfLogo from "../img/partners/jchairfashion/jchf_logo.svg";
+import jchfBanner from "../img/partners/jchairfashion/jchf_1.JPG";
 
 class Partners extends Component {
   render() {
@@ -73,6 +75,11 @@ class Partners extends Component {
             link="/partners/jens-bing"
             banner={jbBanner}
             logo={jbLogo}
+          />
+          <PartnerCard
+            link="/partners/jc-hairfashion"
+            banner={jchfBanner}
+            logo={jchfLogo}
           />
           <div className="partner-card-contact">...and more to come!</div>
         </div>

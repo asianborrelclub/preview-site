@@ -11,7 +11,7 @@ export default class PartnerJensBing extends Component {
     return (
       <>
         <Helmet>
-          <title>ABC - Partner: Golden Garden</title>
+          <title>ABC - Partner: Jen's Bing</title>
         </Helmet>
         <Navbar />
         <PartnersContent

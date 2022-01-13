@@ -24,6 +24,7 @@ import PartnerHoiTin from "./Pages/PartnerHoiTin";
 import PartnerChatime from "./Pages/PartnerChatime";
 import PartnerGoldenGarden from "./Pages/PartnerGoldenGarden";
 import PartnerJensBing from "./Pages/PartnerJensBing";
+import PartnerJCHairfashion from "./Pages/PartnerJCHair";
 
 function App() {
   return (
@@ -67,6 +68,11 @@ function App() {
         component={PartnerGoldenGarden}
       />
       <Route path="/partners/jens-bing" exact component={PartnerJensBing} />
+      <Route
+        path="/partners/jc-hairfashion"
+        exact
+        component={PartnerJCHairfashion}
+      />
     </Router>
   );
 }
