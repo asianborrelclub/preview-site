@@ -15,12 +15,15 @@ class Calendar extends Component {
         <h1>Calendar</h1>
         <div className="event">
           <CalendarItem
-            date="15-12-2021"
-            title="ABC Gaming Valorant Tournament"
+            date="10-02-2022"
+            title="Valentine's Speed Dating & Friending"
           />
-          <CalendarItem date="17-12-2021" title="Christmas Dinner" />
-          <CalendarItem date="13-01-2022" title="New Year's Bingo Borrel" />
-          <CalendarItem date="20-01-2022" title="Dumpling Day Workshop" />
+          <CalendarItem date="17-02-2022" title="ABC CNY Borrel" />
+          <CalendarItem date="10-03-2022" title="Full Moon Party" />
+          <CalendarItem
+            date="17-03-2022"
+            title="Ping Pong & Beer Pong Borrel"
+          />
         </div>
         <div>Follow our socials to get updates!</div>
       </div>

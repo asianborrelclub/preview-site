@@ -20,7 +20,7 @@ import ctLogo from "../img/partners/chatime/ct_logo.png";
 import ggBanner from "../img/partners/golden-garden/gg_1.jpeg";
 import ggLogo from "../img/partners/golden-garden/gg_logo.png";
 import jbBanner from "../img/partners/jens-bing/jb_1.png";
-import jbLogo from "../img/partners/jens-bing/jb_logo.svg";
+import jbLogo from "../img/partners/jens-bing/jb_logo.png";
 import jchfLogo from "../img/partners/jchairfashion/jchf_logo.svg";
 import jchfBanner from "../img/partners/jchairfashion/jchf_1.JPG";
 
