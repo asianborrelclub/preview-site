@@ -14,16 +14,9 @@ class Calendar extends Component {
         ></img>
         <h1>Calendar</h1>
         <div className="event">
-          <CalendarItem
-            date="10-02-2022"
-            title="Valentine's Speed Dating & Friending"
-          />
-          <CalendarItem date="17-02-2022" title="ABC CNY Borrel" />
-          <CalendarItem date="10-03-2022" title="Full Moon Party" />
-          <CalendarItem
-            date="17-03-2022"
-            title="Ping Pong & Beer Pong Borrel"
-          />
+          <CalendarItem date="17-02-2022" title="ABC Borrel" />
+          <CalendarItem date="20-02-2022" title="Volleybal Tournament" />
+          <CalendarItem date="TBA" title="Neon Party" />
         </div>
         <div>Follow our socials to get updates!</div>
       </div>
