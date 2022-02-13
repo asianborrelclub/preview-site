@@ -25,6 +25,7 @@ import PartnerChatime from "./Pages/PartnerChatime";
 import PartnerGoldenGarden from "./Pages/PartnerGoldenGarden";
 import PartnerJensBing from "./Pages/PartnerJensBing";
 import PartnerJCHairfashion from "./Pages/PartnerJCHair";
+import PartnerTakeichi from "./Pages/PartnerTakeichi";
 
 function App() {
   return (
@@ -72,6 +73,11 @@ function App() {
         path="/partners/jc-hairfashion"
         exact
         component={PartnerJCHairfashion}
+      />
+      <Route
+        path="/partners/takeichi-ramen"
+        exact
+        component={PartnerTakeichi}
       />
     </Router>
   );

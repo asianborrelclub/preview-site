@@ -23,6 +23,8 @@ import jbBanner from "../img/partners/jens-bing/jb_1.png";
 import jbLogo from "../img/partners/jens-bing/jb_logo.png";
 import jchfLogo from "../img/partners/jchairfashion/jchf_logo.svg";
 import jchfBanner from "../img/partners/jchairfashion/jchf_1.JPG";
+import takeichiLogo from "../img/partners/takeichi/takeichi_logo.png";
+import takeichiBanner from "../img/partners/takeichi/takeichi_1.jpeg";
 
 class Partners extends Component {
   render() {
@@ -80,6 +82,11 @@ class Partners extends Component {
             link="/partners/jc-hairfashion"
             banner={jchfBanner}
             logo={jchfLogo}
+          />
+          <PartnerCard
+            link="/partners/takeichi-ramen"
+            banner={takeichiBanner}
+            logo={takeichiLogo}
           />
           <div className="partner-card-contact">...and more to come!</div>
         </div>
