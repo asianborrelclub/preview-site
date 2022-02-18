@@ -1,12 +1,12 @@
 export const NavbarItems = [
   {
-    title: "About",
-    url: "/#about-us",
+    title: "Events",
+    url: "/#calendar",
     cName: "nav-links",
   },
   {
-    title: "Events",
-    url: "/#calendar",
+    title: "Merchandise",
+    url: "https://merch.asianborrelclub.nl/",
     cName: "nav-links",
   },
   {
