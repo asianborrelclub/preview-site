@@ -21,7 +21,7 @@
     <title>Asian Borrel Club</title>
   </head>
   <body>
-    <form name="committee-form" netlify netlify-honeypot="bot-field" hidden>
+    <form name="board-form" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="first-name" />
       <input type="text" name="last-name" />
       <input type="date" name="date-of-birth" />
@@ -42,7 +42,7 @@
         <option value="Zeeland">Zeeland</option>
       </select>
       <input type="text" name="institution" required />
-      <select defaultValue="placeholder" name="committees-choice-1">
+      <select defaultValue="placeholder" name="board-choice-1">
         <option value="placeholder" disabled>Select committee</option>
         <option value="marketing">Marketing</option>
         <option value="it">IT</option>
@@ -50,7 +50,7 @@
         <option value="external">External Affairs</option>
         <option value="introduction">Introduction</option>
       </select>
-      <select defaultValue="placeholder" name="committees-choice-2">
+      <select defaultValue="placeholder" name="board-choice-2">
         <option value="placeholder" disabled>Select committee</option>
         <option value="none">None</option>
         <option value="marketing">Marketing</option>
@@ -61,28 +61,6 @@
       </select>
       <input type="file" name="cv-file" />
       <input type="file" name="ml-file" />
-    </form>
-    <form name="hoodie-form" netlify netlify-honeypot="bot-field" hidden>
-      <select defaultValue="M" name="size">
-        <option value="">Select size</option>
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-      </select>
-      <input type="text" name="first-name" />
-      <input type="text" name="last-name" />
-      <input type="email" name="email" />
-      <input type="text" name="company" />
-      <select defaultValue="hoodie-meetup" name="delivery-choice">
-        <option value="">Select delivery option</option>
-        <option value="home">Send to home</option>
-        <option value="hoodie-meetup">Hoodie meetup</option>
-      </select>
-      <input type="text" name="street-and-house-number" />
-      <input type="text" name="apt-suite-etc" />
-      <input type="text" name="postal-code" />
-      <input type="text" name="city" />
     </form>
     <form name="membership-form" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="first-name" />

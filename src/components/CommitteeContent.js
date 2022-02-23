@@ -55,10 +55,7 @@ class CommitteeContent extends Component {
           />
         </div>
         <div className="join-cta">
-          <span>Interested in joining one of our committees?</span>
-          <a href="/committee-form">
-            <button>Apply here!</button>
-          </a>
+          <span>Year 21/22 committee applications closed.</span>
         </div>
       </div>
     );
