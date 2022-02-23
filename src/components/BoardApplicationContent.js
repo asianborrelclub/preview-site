@@ -5,9 +5,11 @@ import "./FormContent.scss";
 import "./BoardApplicationContent.scss";
 
 function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+  const formData = new FormData();
+  Object.keys(data).forEach((k) => {
+    formData.append(k, data[k]);
+  });
+  return formData;
 }
 
 export default class BoardApplicationContent extends Component {
