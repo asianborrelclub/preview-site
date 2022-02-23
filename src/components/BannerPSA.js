@@ -5,27 +5,17 @@ class BannerPSA extends Component {
   render() {
     return (
       <>
-        <a className="banner-anchor" href="/hoodie">
+        <a className="banner-anchor" href="/board-application">
           <div className="scrolling-banner-PSA dt">
-            <div>
-              LIMITED: Pre-order the “ABC’s First Edition Panda Hoodie” from
-              June 5th till June 19th.
-            </div>
-            <div>
-              Price reduced from €40,00 to €34,99. Click here for more info.
-            </div>
+            <div>Board recruitement for 2022/2023 is now in progress!</div>
+            <div>Click here for more info.</div>
           </div>
           <div className="scrolling-banner-PSA tablet">
-            <div>
-              LIMITED: Pre-order the “ABC’s First Edition Panda Hoodie”.{" "}
-            </div>
-            <div>
-              Price reduced from €40,00 to €34,99. Tap here for more info.
-            </div>
+            <div>Board recruitement for year 22/23 now in progress!</div>
+            <div>Tap here for more info.</div>
           </div>
           <div className="scrolling-banner-PSA mobile">
-            LIMITED: Pre-order the “ABC’s First Edition Panda Hoodie”. Tap here
-            for more info.
+            22/23 Board recruitement now in progress. Tap here for more info.
           </div>
         </a>
       </>
