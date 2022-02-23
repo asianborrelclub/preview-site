@@ -208,7 +208,7 @@ export default class BoardApplicationContent extends Component {
                   <label>
                     1st choice:
                     <select
-                      name="committees-choice-1"
+                      name="board-choice-1"
                       required
                       onChange={this.handleChange}
                     >
@@ -225,7 +225,7 @@ export default class BoardApplicationContent extends Component {
                   <label>
                     2nd choice:
                     <select
-                      name="committees-choice-2"
+                      name="board-choice-2"
                       required
                       onChange={this.handleChange}
                     >
