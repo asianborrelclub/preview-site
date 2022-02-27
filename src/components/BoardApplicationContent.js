@@ -62,17 +62,14 @@ export default class BoardApplicationContent extends Component {
   };
 
   handleSubmit = (e) => {
-    const form = e.target;
+    e.preventDefault();
     fetch("/", {
       method: "POST",
       body: encode({
-        "form-name": form.getAttribute("name"),
+        "form-name": e.target.getAttribute("name"),
         ...this.state,
       }),
-    })
-      .then((window.location = form.getAttribute("action")))
-      .catch((error) => console.log(error));
-    e.preventDefault();
+    }).catch((error) => console.log(error));
   };
 
   render() {
