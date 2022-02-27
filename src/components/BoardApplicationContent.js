@@ -4,11 +4,12 @@ import "./CommitteeContent.scss";
 import "./FormContent.scss";
 import "./BoardApplicationContent.scss";
 
+const formData = new FormData();
+
 function encode(data) {
-  const formData = new FormData();
-  Object.keys(data).forEach((k) => {
-    formData.append(k, data[k]);
-  });
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key]);
+  }
   return formData;
 }
 

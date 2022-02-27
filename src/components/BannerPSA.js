@@ -5,7 +5,7 @@ class BannerPSA extends Component {
   render() {
     return (
       <>
-        <a className="banner-anchor" href="/board-application">
+        <a className="banner-anchor" href="/board">
           <div className="scrolling-banner-PSA dt">
             <div>Board recruitement for 2022/2023 is now in progress!</div>
             <div>Click here for more info.</div>
