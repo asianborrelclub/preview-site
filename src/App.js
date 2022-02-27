@@ -25,6 +25,7 @@ import PartnerJensBing from "./Pages/PartnerJensBing";
 import PartnerJCHairfashion from "./Pages/PartnerJCHair";
 import PartnerTakeichi from "./Pages/PartnerTakeichi";
 import BoardApplication from "./Pages/BoardApplication/BoardApplication";
+import BoardInfo from "./Pages/BoardApplication/BoardInformation";
 
 function App() {
   return (
@@ -76,7 +77,8 @@ function App() {
         exact
         component={PartnerTakeichi}
       />
-      <Route path="/board-application" exact component={BoardApplication} />
+      <Route path="/board" exact component={BoardInfo} />
+      <Route path="/board/apply" exact component={BoardApplication} />
     </Router>
   );
 }

@@ -21,7 +21,7 @@
     <title>Asian Borrel Club</title>
   </head>
   <body>
-    <form name="board-form" netlify netlify-honeypot="bot-field" hidden>
+    <form name="board-form" netlify hidden>
       <input type="text" name="first-name" />
       <input type="text" name="last-name" />
       <input type="date" name="date-of-birth" />
@@ -44,6 +44,10 @@
       <input type="text" name="institution" required />
       <select defaultValue="placeholder" name="board-choice-1">
         <option value="placeholder" disabled>Select committee</option>
+        <option value="president">President</option>
+        <option value="secretary">Secretary</option>
+        <option value="treasurer">Treasurer</option>
+        <option value="marketing">Marketing</option>
         <option value="marketing">Marketing</option>
         <option value="it">IT</option>
         <option value="events">Events</option>
@@ -53,6 +57,10 @@
       <select defaultValue="placeholder" name="board-choice-2">
         <option value="placeholder" disabled>Select committee</option>
         <option value="none">None</option>
+        <option value="president">President</option>
+        <option value="secretary">Secretary</option>
+        <option value="treasurer">Treasurer</option>
+        <option value="marketing">Marketing</option>
         <option value="marketing">Marketing</option>
         <option value="it">IT</option>
         <option value="events">Events</option>

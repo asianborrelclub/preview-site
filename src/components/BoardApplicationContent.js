@@ -81,11 +81,11 @@ export default class BoardApplicationContent extends Component {
           <h1>Board&nbsp;Application Asian&nbsp;Borrel&nbsp;Club</h1>
           <p id="form-description">
             Thanks for showing interests in joining the Board of the Asian
-            Borrel Club in Year 22/23! After submitting your application we will
-            contact you as fast as possible. For more information about Board
-            functions, please{" "}
-            <a href="/committees" target="_blank">
-              click here. (MOET NOG VERANDERD WORDEN)
+            Borrel Club in Year 22/23! Are you someone who likes a challenge and
+            wants to expand your knowledge and experiences? Check all our Board
+            positions and their responsibilities{" "}
+            <a href="/board" target="_blank">
+              here.
             </a>
           </p>
           <p id="form-description">
@@ -101,12 +101,7 @@ export default class BoardApplicationContent extends Component {
               onSubmit={this.handleSubmit}
             >
               <input type="hidden" name="form-name" value="board-form" />
-              <p hidden>
-                <label>
-                  Don’t fill this out if you’re human:
-                  <input name="bot-field" onChange={this.handleChange} />
-                </label>
-              </p>
+
               <p>
                 <label>
                   First name:
@@ -212,7 +207,10 @@ export default class BoardApplicationContent extends Component {
                       required
                       onChange={this.handleChange}
                     >
-                      <option value="">Select committee</option>
+                      <option value="">Select board position</option>
+                      <option value="president">President</option>
+                      <option value="secretary">Secretary</option>
+                      <option value="treasurer">Treasurer</option>
                       <option value="marketing">Marketing</option>
                       <option value="it">IT</option>
                       <option value="events">Events</option>
@@ -229,8 +227,11 @@ export default class BoardApplicationContent extends Component {
                       required
                       onChange={this.handleChange}
                     >
-                      <option value="">Select committee</option>
+                      <option value="">Select board position</option>
                       <option value="none">None</option>
+                      <option value="president">President</option>
+                      <option value="secretary">Secretary</option>
+                      <option value="treasurer">Treasurer</option>
                       <option value="marketing">Marketing</option>
                       <option value="it">IT</option>
                       <option value="events">Events</option>
@@ -283,7 +284,7 @@ export default class BoardApplicationContent extends Component {
                   >
                     Terms and Conditions
                   </a>
-                  &nbsp; and the&nbsp;
+                  &nbsp;and the&nbsp;
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
