@@ -251,7 +251,7 @@ export default class BoardApplicationContent extends Component {
                     type="file"
                     name="cv-file"
                     onChange={this.handleCV}
-                    accept="application/pdf"
+                    accept=".pdf"
                   />
                   <p className="file-name1"></p>
                 </label>
@@ -262,7 +262,7 @@ export default class BoardApplicationContent extends Component {
                     type="file"
                     name="ml-file"
                     onChange={this.handleML}
-                    accept="application/pdf"
+                    accept=".pdf"
                   />
                   <p className="file-name2"></p>
                 </label>
