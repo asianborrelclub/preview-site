@@ -71,10 +71,10 @@ export default class BoardInfoContent extends Component {
 
           <div className="committee-item">
             <div className="board-img-left">
-              <img src={tmMatthijs} alt="abc secretery" />
+              <img src={tmMatthijs} alt="abc secretary" />
             </div>
             <div className="committee-context">
-              <h1 className="committee-name">Secretery</h1>
+              <h1 className="committee-name">Secretary</h1>
               <div className="committee-text">
                 <h3>Responsibilities:</h3>
                 <ul>
