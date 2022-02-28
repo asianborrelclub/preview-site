@@ -239,7 +239,6 @@ export default class BoardApplicationContent extends Component {
                       onChange={this.handleChange}
                     >
                       <option value="">Select board position</option>
-                      <option value="none">None</option>
                       <option value="president">President</option>
                       <option value="secretary">Secretary</option>
                       <option value="treasurer">Treasurer</option>

@@ -1,7 +1,43 @@
 @import "../colors";
 
 #committee-page {
-  background-color: $color-primary;
-  display: flex;
-  flex-direction: column;
+  .committee-info.board {
+    background-color: #3aafa9;
+    align-items: center;
+
+    .committee-item {
+      margin: 1rem;
+    }
+  }
+  .committee-landing.board {
+    height: auto;
+    margin: 2rem 2rem 0 2rem;
+    h1.board-title {
+      padding-top: 0;
+    }
+  }
+  .join-cta.board {
+    background-color: #2c7b79;
+  }
+}
+
+.board-img-left {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .board-img-left {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+  #committee-page .committee-info .committee-item {
+    width: 100%;
+  }
 }
