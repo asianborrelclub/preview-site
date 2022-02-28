@@ -62,24 +62,27 @@ export default class BoardApplicationContent extends Component {
   };
 
   handleSubmit = (e) => {
-    e.preventDefault();
+    const form = e.target;
+
     fetch("/", {
       method: "POST",
       body: encode({
-        "form-name": e.target.getAttribute("name"),
+        "form-name": form.getAttribute("name"),
         ...this.state,
       }),
     })
       .then((response) => {
-        if (response.status === 200) {
-          window.location = e.target.getAttribute("action");
+        if (response.ok) {
+          window.location = form.getAttribute("action");
         } else {
-          alert(
-            "Something went wrong. Please contact us through social media."
-          );
+          console.log(response.status);
         }
       })
+      .then((data) => {
+        console.log("Success:", data);
+      })
       .catch((error) => console.log(error));
+    e.preventDefault();
   };
 
   render() {
