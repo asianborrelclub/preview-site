@@ -69,7 +69,17 @@ export default class BoardApplicationContent extends Component {
         "form-name": e.target.getAttribute("name"),
         ...this.state,
       }),
-    }).catch((error) => console.log(error));
+    })
+      .then((response) => {
+        if (response.status === 200) {
+          window.location.href = "/success-page";
+        } else {
+          alert(
+            "Something went wrong. Please contact us through social media."
+          );
+        }
+      })
+      .catch((error) => console.log(error));
   };
 
   render() {
