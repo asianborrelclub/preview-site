@@ -72,7 +72,7 @@ export default class BoardApplicationContent extends Component {
     })
       .then((response) => {
         if (response.status === 200) {
-          window.location.href = "/success-page";
+          window.location = form.getAttribute("action");
         } else {
           alert(
             "Something went wrong. Please contact us through social media."
