@@ -72,7 +72,7 @@ export default class BoardApplicationContent extends Component {
     })
       .then((response) => {
         if (response.status === 200) {
-          window.location = form.getAttribute("action");
+          window.location = e.target.getAttribute("action");
         } else {
           alert(
             "Something went wrong. Please contact us through social media."
