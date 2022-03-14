@@ -11,6 +11,7 @@ import MembershipRegister from "./Pages/MembershipRegister";
 import MembershipPage from "./Pages/MembershipPage";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import ToS from "./Pages/ToS";
+import EventToS from "./Pages/EventToS";
 import ShippingPolicy from "./Pages/ShippingPolicy";
 import PartnerFullmoon from "./Pages/PartnerFullmoon";
 import PartnerTeaGuys from "./Pages/PartnerTeaGuys";
@@ -40,6 +41,7 @@ function App() {
       <Route path="/membership" exact component={MembershipPage} />
       <Route path="/privacy-policy" exact component={PrivacyPolicy} />
       <Route path="/terms-and-conditions" exact component={ToS} />
+      <Route path="/events-terms-and-conditions" exact component={EventToS} />
       <Route path="/shipping-policy" exact component={ShippingPolicy} />
       <Route
         path="/partners/fullmoon-garden"

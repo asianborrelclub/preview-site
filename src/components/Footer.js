@@ -28,7 +28,6 @@ class Footer extends Component {
                     info@asianborrelclub.nl
                   </a>
                 </div>
-                <p></p>
                 For companies:
                 <div class="info-link">
                   <a href="mailto: external@asianborrelclub.nl">
@@ -37,10 +36,8 @@ class Footer extends Component {
                 </div>
               </div>
               <div class="information-tab">
-                <p>
-                  KvK-number: <p></p>
-                  81660200
-                </p>
+                <p>KvK-number:</p>
+                <p>81660200</p>
               </div>
             </div>
             <div class="column c2">
@@ -148,7 +145,16 @@ class Footer extends Component {
                             className="underlinenone"
                             href="/terms-and-conditions"
                           >
-                            Terms and Conditions
+                            Terms & Conditions
+                          </a>
+                        </dt>
+                        <dt>
+                          <a
+                            target="_blank"
+                            className="underlinenone"
+                            href="/events-terms-and-conditions"
+                          >
+                            Terms&nbsp;&&nbsp;Conditions&nbsp;for&nbsp;events
                           </a>
                         </dt>
                       </dl>

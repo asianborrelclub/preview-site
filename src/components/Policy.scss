@@ -30,6 +30,9 @@
       color: $color-primary-light;
       font-style: italic;
     }
+    li {
+      margin-top: 8px;
+    }
   }
 }
 @media only screen and (max-width: 768px) {
