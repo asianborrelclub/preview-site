@@ -25,6 +25,7 @@ import PartnerGoldenGarden from "./Pages/PartnerGoldenGarden";
 import PartnerJensBing from "./Pages/PartnerJensBing";
 import PartnerJCHairfashion from "./Pages/PartnerJCHair";
 import PartnerTakeichi from "./Pages/PartnerTakeichi";
+import PartnerKaraokebar24k from "./Pages/Partner24Karaoke";
 import BoardApplication from "./Pages/BoardApplication/BoardApplication";
 import BoardInfo from "./Pages/BoardApplication/BoardInformation";
 
@@ -78,6 +79,11 @@ function App() {
         path="/partners/takeichi-ramen"
         exact
         component={PartnerTakeichi}
+      />
+      <Route
+        path="/partners/karaokebar-24k"
+        exact
+        component={PartnerKaraokebar24k}
       />
       <Route path="/board" exact component={BoardInfo} />
       <Route path="/board/apply" exact component={BoardApplication} />

@@ -26,6 +26,9 @@ import jchfBanner from "../img/partners/jchairfashion/jchf_1.JPG";
 import takeichiLogo from "../img/partners/takeichi/takeichi_logo.png";
 import takeichiBanner from "../img/partners/takeichi/takeichi_1.jpeg";
 
+import karaokeLogo from "../img/partners/24karaoke/24k_logo.png";
+import karaokeBanner from "../img/partners/24karaoke/24k_1.jpg";
+
 class Partners extends Component {
   render() {
     return (
@@ -87,6 +90,11 @@ class Partners extends Component {
             link="/partners/takeichi-ramen"
             banner={takeichiBanner}
             logo={takeichiLogo}
+          />
+          <PartnerCard
+            link="/partners/karaokebar-24k"
+            banner={karaokeBanner}
+            logo={karaokeLogo}
           />
           <div className="partner-card-contact">...and more to come!</div>
         </div>

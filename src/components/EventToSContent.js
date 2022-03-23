@@ -110,7 +110,7 @@ export default class RefundPolicyContent extends Component {
           </p>
           <ol>
             <li>
-              The organizer may in its sole discretion, delay, modify, or cancel
+              The Organizer may in its sole discretion, delay, modify, or cancel
               the Event if it believes the conditions are unsafe. If the event
               is delayed, modified, or cancelled for any reason, including but
               not limited to directives issued by authorities, “force majeure”
