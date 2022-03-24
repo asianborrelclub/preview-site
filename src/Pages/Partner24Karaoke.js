@@ -18,7 +18,7 @@ export default class Partner24Karaoke extends Component {
           banner={Banner}
           logo={Logo}
           title="Karaokebar 24k"
-          about="Karaoke Bar 24K is the new karaoke experience near the Rembrandtplein in the center of Amsterdam! Visit them with your family, friends, or colleagues for a great night full of fun."
+          about="Thé karaoke hotspot located in the heart of Amsterdam! Visit them with your family, friends, or colleagues for a great night full of fun."
           about2="There are over 80.000 songs available in many languages like English, Dutch, Korean, Mandarin and Japanese. Enjoy drinks, cocktails, and much more from their brand new bar while singing all night long."
           deal="Show your ABC Membership and enjoy a 15% discount on the bill!"
           website="https://karaokebar24k.nl/"
