@@ -16,6 +16,15 @@
       padding-top: 0;
       text-align: center;
     }
+
+    a {
+      color: white;
+      text-decoration: none;
+      text-decoration: underline;
+      &:hover {
+        color: aliceblue;
+      }
+    }
   }
   .join-cta.board {
     background-color: #2c7b79;

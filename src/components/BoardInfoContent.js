@@ -40,6 +40,13 @@ export default class BoardInfoContent extends Component {
               Being open for feedback and processing it for the growth of ABC
             </li>
           </ul>
+          <br />
+          <ul>
+            For more information about the application process, please click{" "}
+            <a href="https://drive.google.com/file/d/1UPVZH04EQTIidkY8Dr3_4j4oEvxTCV_T/view?usp=sharing">
+              here
+            </a>
+          </ul>
         </div>
         <div className="committee-info board">
           <h2>Board positions</h2>
