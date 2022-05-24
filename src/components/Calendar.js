@@ -14,7 +14,6 @@ class Calendar extends Component {
         ></img>
         <h1>Calendar</h1>
         <div className="event">
-          <CalendarItem date="28-05-2022" title="Throw slime at Nick Chen!" />
           <CalendarItem date="31-05-2022" title="Last day Board Application" />
           <CalendarItem date="09-06-2022" title="Cocktail Workshop" />
           <CalendarItem date="25-06-2022" title="ABC Lasertag" />
