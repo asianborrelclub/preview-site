@@ -17,7 +17,7 @@ export default class BoardInfoContent extends Component {
     return (
       <div id="committee-page">
         <div className="committee-landing board">
-          <h1 className="board-title">ABC Board Application</h1>
+          <h1 className="board-title">ABC Board Information</h1>
           <h2>Core Board Principles</h2>
           <ul>
             <li>
@@ -227,10 +227,7 @@ export default class BoardInfoContent extends Component {
           </div>
         </div>
         <div className="join-cta board">
-          <span>Interested in a board position?</span>
-          <a href="/board/apply">
-            <button>Apply here!</button>
-          </a>
+          <span>Year 22/23 ABC Board applications are closed.</span>
         </div>
       </div>
     );

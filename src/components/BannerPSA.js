@@ -7,15 +7,16 @@ export default class BannerPSA extends Component {
       <>
         <a className="banner-anchor" href="/board">
           <div className="scrolling-banner-PSA dt">
-            <div>Board recruitment for 2022/2023 is now in progress!</div>
-            <div>Click here for more info.</div>
+            <div>Board applications for 2022/2023 are now closed.</div>
+            <div>Thank you for applying!</div>
           </div>
           <div className="scrolling-banner-PSA tablet">
-            <div>Board recruitment for year 22/23 now in progress!</div>
-            <div>Tap here for more info.</div>
+            <div>Board applications for 2022/2023 are now closed.</div>
+            <div>Thank you for applying!</div>
           </div>
           <div className="scrolling-banner-PSA mobile">
-            22/23 Board recruitment now in progress. Tap here for more info.
+            Board applications for 2022/2023 are now closed. Thank you for
+            applying!
           </div>
         </a>
       </>

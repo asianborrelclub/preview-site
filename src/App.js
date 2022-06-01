@@ -86,7 +86,7 @@ function App() {
         component={PartnerKaraokebar24k}
       />
       <Route path="/board" exact component={BoardInfo} />
-      <Route path="/board/apply" exact component={BoardApplication} />
+      <Route path="/board/apply" exact component={BoardInfo} />
     </Router>
   );
 }
