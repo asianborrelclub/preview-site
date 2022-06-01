@@ -26,7 +26,6 @@ import PartnerJensBing from "./Pages/PartnerJensBing";
 import PartnerJCHairfashion from "./Pages/PartnerJCHair";
 import PartnerTakeichi from "./Pages/PartnerTakeichi";
 import PartnerKaraokebar24k from "./Pages/Partner24Karaoke";
-import BoardApplication from "./Pages/BoardApplication/BoardApplication";
 import BoardInfo from "./Pages/BoardApplication/BoardInformation";
 
 function App() {
