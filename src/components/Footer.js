@@ -9,51 +9,51 @@ class Footer extends Component {
     return (
       <footer>
         <div className="footer">
-          <div class="row">
-            <div class="column d1">
+          <div className="row">
+            <div className="column d1">
               <img className="logo" src={logo} alt="logo" />
-              <div class="socialb">
+              <div className="socialb">
                 <SocialButton />
               </div>
             </div>
 
-            <div class="column c2">
+            <div className="column c2">
               <h3>
                 <u>Association Asian Borrel Club</u>
               </h3>
-              <div class="information-tab">
+              <div className="information-tab">
                 General enquiries:
-                <div class="info-link">
+                <div className="info-link">
                   <a href="mailto: info@asianborrelclub.nl">
                     info@asianborrelclub.nl
                   </a>
                 </div>
                 For companies:
-                <div class="info-link">
+                <div className="info-link">
                   <a href="mailto: external@asianborrelclub.nl">
                     external@asianborrelclub.nl
                   </a>
                 </div>
               </div>
-              <div class="information-tab">
+              <div className="information-tab">
                 <p>KvK-number:</p>
                 <p>81660200</p>
               </div>
             </div>
-            <div class="column c2">
+            <div className="column c2">
               <h3>
                 <u>About us</u>
               </h3>
-              <div class="information-tab">
+              <div className="information-tab">
                 ABC brings students with an interest in the Asian culture
                 together through befriending and networking events.
               </div>
-              <div class="row2">
-                <div class="column2 push50">
+              <div className="row2">
+                <div className="column2 push50">
                   <h3>
                     <u>Information</u>
                   </h3>
-                  <div class="information-tab">
+                  <div className="information-tab">
                     <div className="links">
                       <dl>
                         <dt>
@@ -105,11 +105,11 @@ class Footer extends Component {
                     </div>
                   </div>
                 </div>
-                <div class="column2">
+                <div className="column2">
                   <h3>
                     <u>Resources</u>
                   </h3>
-                  <div class="information-tab">
+                  <div className="information-tab">
                     <div className="links">
                       <dl>
                         <dt>
@@ -154,7 +154,7 @@ class Footer extends Component {
                             className="underlinenone"
                             href="/events-terms-and-conditions"
                           >
-                            Terms&nbsp;&&nbsp;Conditions&nbsp;for&nbsp;events
+                            T&nbsp;&&nbsp;C&nbsp;for&nbsp;events
                           </a>
                         </dt>
                       </dl>
@@ -164,7 +164,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div class="column3 d2">
+          <div className="column3 d2">
             <img className="logo " src={logo} alt="logo" />
             <SocialButton />
           </div>

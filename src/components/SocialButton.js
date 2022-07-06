@@ -38,7 +38,7 @@ class SocialButton extends Component {
           rel="noopener noreferrer"
         >
           <button className="btn btn-discord">
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-linkedin-in"></i>
           </button>
         </a>
       </div>
