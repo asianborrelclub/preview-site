@@ -444,6 +444,26 @@ class MembershipContent extends Component {
                 </a>
               </label>
             </p>
+            <div className="small-text-accept">
+              <p>
+                You agree that your membership will take effect immediately and
+                acknowledge that you thereby lose your right of withdrawal.
+              </p>
+              <p>
+                Start your membership with iDEAL. If you make the first
+                transaction of € 10.00 via iDEAL, your bank account number will
+                be passed on to ABC. You then give ABC permission to withdraw €
+                10.00 from your bank account every year on 1st of September.
+              </p>
+              <p>
+                By clicking the Register button below, you agree to our terms
+                and conditions, House Rules. You also declare that you have
+                taken note of the privacy statement. ABC automatically renews
+                your membership and deducts the membership fee from your payment
+                method until you cancel. You can cancel until 31st of July every
+                year to avoid further charges.
+              </p>
+            </div>
           </div>
           <button type="submit">Register</button>
         </form>
